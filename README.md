@@ -1,2 +1,0 @@
-# bt-repos
-BT Repository
