@@ -5,6 +5,9 @@
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
+body{
+  background: linear-gradient(#e77566,#f3dde2);
+}
 nav{
   position: sticky;
   top: 0;
@@ -30,7 +33,7 @@ nav .wrapper{
   text-decoration: none;
 }
 .wrapper .logo img{
-  width: 300px;
+  width: 250px;
   margin-top: 30px;
   border-radius: 40px;
 }
@@ -72,13 +75,45 @@ nav .wrapper{
     margin: 10px;
     
 }
-.welcomeimage{
+
+.welcome-pictures{
     display: flex;
     justify-content: center;
-    height: 600px;
+    height: 350px;
 }
-.welcomeimage .chainnft,.capnft,.crownnft,.kingnft{
-    margin-top: 2000px;
+.welcome-pictures .chainnft,.capnft,.crownnft,.kingnft{
+    margin-top: 50px;
     padding: 20px;
     border-radius: 50px;
+}
+
+
+.contact-text, .contactform{
+  display: flex;
+  justify-content: center;
+  padding: 10;
+  margin: 10px;
+}
+
+.contactform form {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  height: 400px;
+}
+.contactform form input {
+  padding: 2rem;
+  margin-top: 10px;
+  border: 2px solid black;
+  height: 50px;
+  background-color: #242526;
+  color: white;
+}
+.contactform form textarea {
+  padding: 2rem;
+  margin-top: 10px;
+  border: 2px solid black;
+  height: 100px;
+  background-color: #242526;
+  color: white;
 }
