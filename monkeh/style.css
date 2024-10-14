@@ -6,11 +6,7 @@
   font-family: 'Poppins', sans-serif;
 }
 body{
-<<<<<<< HEAD
   background-color: #1b1e2b;
-=======
-  background: linear-gradient(#e77566,#f3dde2);
->>>>>>> f6da31440f7c7ca38c273ed2c789d2cb26b81a82
 }
 nav{
   position: fixed;
@@ -73,14 +69,12 @@ nav .wrapper{
   margin-top: 100px;
   padding-left: 10%;
   padding-right: 10%;
-  color: white;   
 }
 .welcome h1,.p{
   padding: 10px;
   margin: 10px;
     
 }
-<<<<<<< HEAD
 .welcomeimage{
   display: flex;
   justify-content: center;
@@ -110,37 +104,17 @@ h2.contacttext {
   padding: 40px;
   border-radius: 10px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-=======
-
-.welcome-pictures{
-    display: flex;
-    justify-content: center;
-    height: 350px;
-}
-.welcome-pictures .chainnft,.capnft,.crownnft,.kingnft{
-    margin-top: 50px;
-    padding: 20px;
-    border-radius: 50px;
-}
-
-
-.contact-text, .contactform{
-  display: flex;
-  justify-content: center;
-  padding: 10;
-  margin: 10px;
->>>>>>> f6da31440f7c7ca38c273ed2c789d2cb26b81a82
 }
 
 .contactform form {
   display: flex;
   flex-direction: column;
-<<<<<<< HEAD
   gap: 20px;
 }
 
 /* Input Fields */
 .contactform input[type="text"],
+
 .contactform textarea {
   background-color: #20222d;
   color: #fff;
@@ -203,24 +177,3 @@ form::before {
   margin-bottom: 10px;
   font-family: 'Poppins', sans-serif;
 }
-=======
-  width: 400px;
-  height: 400px;
-}
-.contactform form input {
-  padding: 2rem;
-  margin-top: 10px;
-  border: 2px solid black;
-  height: 50px;
-  background-color: #242526;
-  color: white;
-}
-.contactform form textarea {
-  padding: 2rem;
-  margin-top: 10px;
-  border: 2px solid black;
-  height: 100px;
-  background-color: #242526;
-  color: white;
-}
->>>>>>> f6da31440f7c7ca38c273ed2c789d2cb26b81a82
