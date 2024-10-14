@@ -5,12 +5,15 @@
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
+body{
+  background-color: #1b1e2b;
+}
 nav{
-  position: sticky;
+  position: fixed;
   top: 0;
   z-index: 99;
   width: 100%;
-  background: #242526;
+  background-color: #1f2129; 
 }
 nav .wrapper{
   position: relative;
@@ -60,25 +63,117 @@ nav .wrapper{
   background: #3A3B3C;
 }
 .welcome{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-top: 50px;
-    padding-left: 10%;
-    padding-right: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 100px;
+  padding-left: 10%;
+  padding-right: 10%;
+  color: white;   
 }
 .welcome h1,.p{
-    padding: 10px;
-    margin: 10px;
+  padding: 10px;
+  margin: 10px;
     
 }
 .welcomeimage{
-    display: flex;
-    justify-content: center;
-    height: 600px;
+  display: flex;
+  justify-content: center;
 }
 .welcomeimage .chainnft,.capnft,.crownnft,.kingnft{
-    margin-top: 2000px;
-    padding: 20px;
-    border-radius: 50px;
+  margin-top: 50px;
+  padding: 20px;
+  border-radius: 50px;
+  width: 20%;
+  min-width: 110px;
+}
+
+
+h2.contacttext {
+  color: #ffcc00; 
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.contactform {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #292d3e; /* Slightly lighter background for the form */
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.contactform form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Input Fields */
+.contactform input[type="text"],
+.contactform textarea {
+  background-color: #20222d;
+  color: #fff;
+  border: 2px solid #ffcc00; /* Yellow border to match theme */
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 1rem;
+  transition: 0.3s;
+}
+
+.contactform input[type="text"]:focus,
+.contactform textarea:focus {
+  outline: none;
+  border-color: #ff6b00; /* Slight orange for active fields */
+}
+
+.contactform textarea {
+  height: 150px;
+  resize: none;
+}
+
+/* Submit Button */
+.submut {
+  background-color: #ff6b00; /* Vibrant orange for the button */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 15px 20px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submut:hover {
+  background-color: #ffcc00; /* Hover effect */
+}
+
+/* Extra Styling for the NFT Vibe */
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('monkey-background.png'); /* Add a cool monkey or abstract background */
+  opacity: 0.05;
+  z-index: -1;
+  background-size: cover;
+}
+
+form::before {
+  content: "MonkehClub";
+  display: block;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bold;
+  color: #ffcc00;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+  font-family: 'Poppins', sans-serif;
 }
