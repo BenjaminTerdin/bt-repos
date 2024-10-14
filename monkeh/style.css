@@ -63,6 +63,7 @@ nav .wrapper{
   background: #3A3B3C;
 }
 .welcome{
+  color: #f2f2f2;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -73,7 +74,6 @@ nav .wrapper{
 .welcome h1,.p{
   padding: 10px;
   margin: 10px;
-    
 }
 .welcomeimage{
   display: flex;
@@ -87,23 +87,35 @@ nav .wrapper{
   min-width: 110px;
 }
 
+.nft-text{
+  color: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 50px;
+  padding-left: 10%;
+  padding-right: 10%;
+}
 
-h2.contacttext {
-  color: #ffcc00; 
-  font-size: 2rem;
-  text-align: center;
-  margin-bottom: 20px;
-  font-family: 'Poppins', sans-serif;
+.contact-text{
+  color: #f2f2f2;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 .contactform {
   width: 100%;
   max-width: 600px;
   margin: 0 auto;
-  background-color: #292d3e; /* Slightly lighter background for the form */
+  background-color: #292d3e; 
   padding: 40px;
   border-radius: 10px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);  
+  margin-bottom: 100px;
 }
 
 .contactform form {
@@ -112,13 +124,12 @@ h2.contacttext {
   gap: 20px;
 }
 
-/* Input Fields */
 .contactform input[type="text"],
 
 .contactform textarea {
   background-color: #20222d;
   color: #fff;
-  border: 2px solid #ffcc00; /* Yellow border to match theme */
+  border: 2px solid #ffcc00; 
   border-radius: 5px;
   padding: 10px;
   font-size: 1rem;
@@ -126,9 +137,10 @@ h2.contacttext {
 }
 
 .contactform input[type="text"]:focus,
+
 .contactform textarea:focus {
   outline: none;
-  border-color: #ff6b00; /* Slight orange for active fields */
+  border-color: #ff6b00; 
 }
 
 .contactform textarea {
@@ -136,9 +148,8 @@ h2.contacttext {
   resize: none;
 }
 
-/* Submit Button */
 .submut {
-  background-color: #ff6b00; /* Vibrant orange for the button */
+  background-color: #ff6b00; 
   color: #fff;
   border: none;
   border-radius: 5px;
@@ -149,28 +160,15 @@ h2.contacttext {
 }
 
 .submut:hover {
-  background-color: #ffcc00; /* Hover effect */
+  background-color: #ffcc00; 
 }
 
-/* Extra Styling for the NFT Vibe */
-body::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url('monkey-background.png'); /* Add a cool monkey or abstract background */
-  opacity: 0.05;
-  z-index: -1;
-  background-size: cover;
-}
 
 form::before {
   content: "MonkehClub";
   display: block;
   text-align: center;
-  font-size: 3rem;
+  font-size: 45px;
   font-weight: bold;
   color: #ffcc00;
   letter-spacing: 2px;
