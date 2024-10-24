@@ -126,7 +126,7 @@ button:focus {
 ul,
 li,
 ol {
-     margin: 0px;
+     margin-right: 30px;
      padding: 0px;
      list-style: none;
 }
@@ -158,10 +158,18 @@ a,
 img {
      max-width: 100%;
      height: auto;
+     border-radius: 20px;
+     margin-bottom: 20px;
 }
 
  :focus {
      outline: 0;
+}
+
+.pricetag{
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 400;
 }
 
 .paddind_bottom_0 {
@@ -224,7 +232,8 @@ button {
 }
 
 .logo {
-    width: 18%;
+    font-size: 24px;
+    width: 60%;
     float: left;
 }
 .navbar {
@@ -238,7 +247,6 @@ button {
 .bg-light {
     background-color: #fefeff !important;
     box-shadow: 0px 0px 10px 0px;
-    border-top: 45px solid #333a44;
 }
 .navbar-light .navbar-nav .nav-link {
     color: #24292f;
@@ -320,13 +328,13 @@ button {
 #my_slider a.carousel-control-prev {
     position: absolute;
     left: 15px;
-    top: 115%;
+    top: 100%;
     background-color: #599ee9;
 }
 #my_slider .carousel-control-prev, #my_slider .carousel-control-next {
     width: 65px;
     height: 65px;
-    background: #ffffff;
+    background: #599ee9;
     opacity: 1;
     font-size: 30px;
     color: #000;
@@ -340,7 +348,7 @@ button {
 #my_slider a.carousel-control-next {
     position: absolute;
     left:100px;
-    top: 115%;
+    top: 100%;
 }
 
 .about_section{

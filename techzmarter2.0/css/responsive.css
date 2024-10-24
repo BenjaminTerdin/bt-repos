@@ -17,6 +17,9 @@
     .logo {
         text-align: center;
     }
+    .layout_padding{
+        padding-top: 30px;
+    }
     .cart-content-right {
         padding-bottom: 5px;
     }
@@ -89,6 +92,9 @@
     .cart-content-right {
         padding-bottom: 5px;
     }
+    .layout_padding{
+        padding-top: 30px;
+    }
     .megamenu>.row [class*="col-"] {
         padding: 0px;
     }
@@ -135,6 +141,7 @@
 
 @media (min-width: 992px) and (max-width: 1199px) {
     
+    .logo{font-size: 20px;}
     .titlepage h2::after {width: 58%;}
     .about-box .titlepage h2::after {
         width: 52%;
@@ -179,6 +186,7 @@ width: 30%;
 @media (min-width: 768px) and (max-width: 991px) {
     .main-menu ul > li a {padding: 7px 6px ; }
     .main-menu ul>li a { font-size: 14px;}
+    .logo{font-size: 20px;}
 
 
     .banner-main .carousel-caption h1 {
