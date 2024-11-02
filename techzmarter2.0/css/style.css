@@ -49,6 +49,7 @@ body {
      overflow-x: hidden;
 }
 
+
 a {
      color: #1f1f1f;
      text-decoration: none !important;
@@ -238,6 +239,9 @@ button {
 }
 .navbar {
     padding: 20px 30px;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
 }
 .navbar-expand-lg .navbar-nav .nav-link {
     padding-right: 10px;
@@ -261,6 +265,7 @@ button {
 }
 
 .banner_section {
+    margin-top: 80px;
     width: 100%;
     float: left;
     background-image: url(../images/banner-bg.png);
@@ -624,6 +629,13 @@ button {
     margin-top: 90px;
 }
 
+.contact_head h1{
+    display: flex;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 30px;
+}
+
 .image_6{
     width: 100%;
     float: left;
@@ -708,6 +720,10 @@ button {
     padding-bottom: 30px;
 }
 
+.col-sm-6.col-md-6.col-lg-3{
+    margin-left: 50px;
+}
+
 .account_text {
     width: 100%;
     float: left;
@@ -717,28 +733,6 @@ button {
     padding: 25px 0px;
 }
 
-.email_text {
-    width: 100%;
-    float: left;
-    font-size: 12pt;
-    color: #eceaea;
-    background-color: #ffffff;
-    padding: 10px;
-    border: 0px;
-}
-
-.subscribr_bt {
-    width: 60%;
-    float: left;
-    font-size: 16pt;
-    color: #eceaea;
-    background-color: #599ee9;
-    padding: 5px 0px;
-    border: 0px;
-    text-align: center;
-    margin-top: 20px;
-    font-weight: 600;
-}
 
 .useful_link{
     width: 100%;
@@ -769,46 +763,7 @@ button {
     padding-bottom: 40px;
 }
 
-.social_icon {
-    width: 19%;
-    margin: 0 auto;
-    text-align: center;
-}
 
-.social_icon ul{
-    margin: 0px;
-    padding: 0px;
-}
-
-.social_icon li {
-    float: left;
-    padding-right: 20px;
-    padding-top: 40px;
-}
-
-.copyright_section{
-    width: 100%;
-    float: left;
-    background-color: #599ee9;
-    height: auto;
-}
-
-.copyright_text{
-    width: 100%;
-    float: left;
-    font-size: 16px;
-    color: #ffffff;
-    text-align: center;
-    margin-left: 0px;
-}
-
-.copyright_text a{
-    color: #ffffff;
-}
-
-.copyright_text a:hover{
-    color: #000;
-}
 
 
 .margin_top_0{
