@@ -763,8 +763,20 @@ button {
     padding-bottom: 40px;
 }
 
+.socials{
+    display: inline-grid;
+    justify-items: center;
+}
 
+.socials img{
+    margin-left: 30px;
+    margin-top: 20px;
+}
 
+.tiktok-icon,.instagram-icon,.youtube-icon{
+    width: 40px;
+    height: 40px;
+}
 
 .margin_top_0{
     margin-top: 90px;
