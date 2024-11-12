@@ -313,10 +313,24 @@ padding: 126px 40px;
     width: 55%;
 }
 
+.image_3 { display: none;}
+.image_2 img {
+    display: block;
+    margin: auto;
+    max-width: 80%;
+    padding-bottom: 20px;
+}
+.lorem_text { text-align: center;}
+.image_1 img {
+    display: block;
+    margin: auto;
+    max-width: 300px;
+}
 .logo { width: 60%; }
-.video_text { font-size: 43px; }
-.controller_text { font-size: 46px; }
-.banner_text { padding-top: 0px; }
+.video_text { font-size: 40px; }
+.controller_text { font-size: 43px; }
+.pricetag{ font-size: 30px;}
+.banner_text { padding-top: 0px; font-size: 15px; }
 .shop_bt { width: 30%; }
 #my_slider a.carousel-control-next { display: none; }
 #my_slider a.carousel-control-prev { display: none; }
@@ -325,9 +339,6 @@ padding: 126px 40px;
 .shop_bt_2 { width: 30%; }
 .product_text { font-size: 37px; }
 .see_main { width: 30%; }
-.video_text_2 { font-size: 37px; }
-.controller_text_2 { font-size: 31px; }
-.banner_text_2 { padding-top: 0px; }
 .video_section { padding-bottom: 80px; }
 .testimonial_text { font-size: 40px; }
 .box_main { width: 100%; padding: 20px;}
@@ -422,17 +433,35 @@ ul.link li {
 }
 
 
+.image_3 { display: none;}
+.image_2 img {
+    display: block;
+    margin: auto;
+    max-width: 70%;
+    padding-bottom: 20px;
+}
+.lorem_text { text-align: center;}
+.image_1 img {
+    display: block;
+    margin: auto;
+    max-width: 300px;
+}
 .logo { width: 60%; }
-.video_text { font-size: 43px; }
-.controller_text { font-size: 46px; }
-.banner_text { padding-top: 0px; }
+.video_text { font-size: 36px; }
+.controller_text { font-size: 39px; }
+.pricetag{ font-size: 25px;}
+
+.price_text { font-size: 22px;}
+.game_text { font-size: 24px;}
+.long_text { font-size: 14px;}
+
+.banner_text { padding-top: 0px; font-size: 14px; }
 .shop_bt { width: 135px; }
 #my_slider a.carousel-control-next { display: none; }
 #my_slider a.carousel-control-prev { display: none; }
 .banner_section { padding-bottom: 90px; }
 .about_section { padding-top: 0px; }
-.shop_bt_2 { width: 135px; }
-.product_text { font-size: 37px; }
+.product_text { font-size: 33px;}
 .see_main { width: 135px; }
 .video_text_2 { font-size: 37px; }
 .controller_text_2 { font-size: 31px; }
@@ -446,7 +475,6 @@ ul.link li {
 .social_icon { width: 70%; }
 .social_icon ul { display: inline-flex; }
 .subscribr_bt { width: 140px; }
-.image_2 { text-align: center; }
 .margin_top_2 { margin-top: 0px; }
 
 
