@@ -164,6 +164,8 @@ right: -221px;
 width: 30%;
    }
 
+
+
 .video_text { font-size: 43px; }
 .controller_text { font-size: 46px; }
 .banner_text { padding-top: 0px; }
@@ -171,6 +173,8 @@ width: 30%;
 #my_slider a.carousel-control-prev { display: none; }
 .banner_section { padding-bottom: 90px; }
 .about_section { padding-top: 0px; }
+.about_text{ font-size: 37px; margin-top: 50px;}
+.image_3 {margin-top: 50px;}
 .product_text { font-size: 37px; }
 .video_text_2 { font-size: 37px; }
 .controller_text_2 { font-size: 31px; }
@@ -237,6 +241,7 @@ width: 30%;
          padding-left: 15px;
     }
 
+.about_text{ font-size: 37px; margin-top: 50px;}
 .logo { width: 60%; }
 .video_text { font-size: 43px; }
 .controller_text { font-size: 46px; }
@@ -326,6 +331,10 @@ padding: 126px 40px;
     margin: auto;
     max-width: 300px;
 }
+
+
+
+.about_text{ font-size: 37px; margin-top: 50px; text-align: center;}
 .logo { width: 60%; }
 .video_text { font-size: 40px; }
 .controller_text { font-size: 43px; }
@@ -446,6 +455,9 @@ ul.link li {
     margin: auto;
     max-width: 300px;
 }
+
+
+.about_text{ font-size: 37px; margin-top: 50px; text-align: center;}
 .logo { width: 60%; }
 .video_text { font-size: 36px; }
 .controller_text { font-size: 39px; }
