@@ -269,7 +269,7 @@ img {
     color: #4a4a4a;
   }
 
-  .price-amount mark{
+  .price-amount mark{-
     color: #599EE9;
     background-color: #F9F9F9;
   }
