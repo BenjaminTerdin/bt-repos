@@ -329,6 +329,11 @@ img {
      font-size: 24px;
      margin: 0 0 10px;
  }
+ .product1-description {
+     margin: 0;
+     margin-bottom: 50px;
+
+ }
  
  .product1-buy-now-button {
      width: 150px;
@@ -373,7 +378,7 @@ img {
  
  .product1-other-products {
      position: relative;
-     margin-top: 150px;
+     margin-top: 80px;
      display: flex;
      flex-wrap: wrap;
      gap: 20px;

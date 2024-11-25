@@ -295,6 +295,11 @@ width: 30%;
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
+.shop_bt_2{
+    display: flex;
+    justify-content: center;
+}
+
     .last {display: none;}
     .banner-main .carousel-caption {top: 0%;}
 .titlepage h2 {
@@ -479,7 +484,7 @@ ul.link li {
     max-width: 300px;
 }
 
-.row {margin-right: 50px;}
+
 
 .about_text{ font-size: 37px; margin-top: 50px; text-align: center;}
 .logo{font-size: 20px;}
