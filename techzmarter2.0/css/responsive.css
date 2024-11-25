@@ -19,18 +19,26 @@
         margin-top: 20px;
     }
 
-    .section_footer h2 { font-size: 10px; }
-    .section_footer p { font-size: 10px; }
-    .section_footer li { font-size: 10px;}
+    .row {margin-right: 30px;}
+    .section_footer h2 { font-size: 20px; }
+    .section_footer p { font-size: 14px; }
+    .section_footer li { font-size: 14px;}
+}
+
+@media (max-width: 1199px) {
+    .socials {
+        scale: 0.9;
+    }
+    .socials img {
+        margin-top: 10px;
+    }
 }
 
 
 /*------------------------------------------------------------------- 767px x 599px ---------------------------------------------------------------------*/
 
 @media only screen and (min-width: 599px) and (max-width: 767px) {
-    .logo {
-        text-align: center;
-    }
+
     .layout_padding{
         padding-top: 30px;
     }
@@ -98,6 +106,11 @@
         padding: 30px 0px;
     }
     
+    .row {margin-right: 30px;}
+    .col-sm-6 {
+        flex: 0 0 100%;
+        min-width: 100%;
+      }
 }
 
 
@@ -147,13 +160,16 @@
     .mean-container .mean-nav ul li a.mean-expand {
         top: 0;
     }
-    .logo{font-size: 20px;}
 
-
-
+    .row {margin-right: 30px;}
+    .col-sm-6 {
+        flex: 0 0 100%;
+        min-width: 100%;
+      }
 
 
 }
+
 
 @media (min-width: 992px) and (max-width: 1199px) {
     
@@ -190,9 +206,9 @@ width: 30%;
 .image_6 { margin-top: 50px; }
 .social_icon { width: 70%; }
 .social_icon ul { display: inline-flex; }
-.section_footer h2 { font-size: 10px; }
-.section_footer p { font-size: 10px; }
-.section_footer li { font-size: 10px;}
+.section_footer h2 { font-size: 20px; }
+.section_footer p { font-size: 14px; }
+.section_footer li { font-size: 14px;}
 .navbar-expand-lg .navbar-nav .nav-link {
     padding-right: 5px;
     padding-left: 10px;
@@ -249,7 +265,6 @@ width: 30%;
     }
 
 .about_text{ font-size: 37px; margin-top: 50px;}
-.logo { width: 60%; }
 .video_text { font-size: 43px; }
 .controller_text { font-size: 46px; }
 .banner_text { padding-top: 0px; }
@@ -343,7 +358,7 @@ padding: 126px 40px;
 
 
 .about_text{ font-size: 37px; margin-top: 50px; text-align: center;}
-.logo { width: 60%; }
+.logo{font-size: 20px;}
 .video_text { font-size: 40px; }
 .controller_text { font-size: 43px; }
 .pricetag{ font-size: 30px;}
@@ -464,9 +479,10 @@ ul.link li {
     max-width: 300px;
 }
 
+.row {margin-right: 50px;}
 
 .about_text{ font-size: 37px; margin-top: 50px; text-align: center;}
-.logo { width: 60%; }
+.logo{font-size: 20px;}
 .video_text { font-size: 36px; }
 .controller_text { font-size: 39px; }
 .pricetag{ font-size: 25px;}

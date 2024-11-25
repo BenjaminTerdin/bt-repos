@@ -360,17 +360,15 @@ img {
      position: absolute; /* Position relative to .product1-info */
      bottom: 20px; /* Distance from the bottom of the container */
      left: 20px; /* Distance from the left of the container */
-     background-color: #f7c008; /* Bright yellow background */
-     color: #191919; /* Dark text for visibility */
+     color: #4a4a4a;
      padding: 8px 15px;
      border-radius: 20px;
      font-size: 18px;
      font-weight: bold;
-     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Shadow to make it stand out */
  }
- 
- .product1-price-tag:hover {
-     background-color: #e6b507; /* Darker yellow when hovered */
+ .product1-price-tag mark{
+     color: #599EE9;
+     background-color: transparent;
  }
  
  .product1-other-products {
