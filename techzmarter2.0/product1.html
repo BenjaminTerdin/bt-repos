@@ -8,23 +8,19 @@
 </head>
 <body>
 
-
-
-    <div class="container">
-        <div class="wrapper">
-          <div class="banner-image"> </div>
-          <h1> Toyota Supra</h1>
-          <p>Lorem ipsum dolor sit amet, <br/>
-            consectetur adipiscing elit.</p>
-         </div>
-         <div class="button-wrapper"> 
-         <button class="btn outline">DETAILS</button>
-           <button class="btn fill">BUY NOW</button>
-         </div>
-           </div>
-       </div>
-       
-       
+<div class="product-card">
+    <div class="product-image">
+        <img src="images/OculusQuest2.png" alt="VR Headset">
+    </div>
+    <div class="product-details">
+        <h2 class="product-title">VR Headset</h2>
+        <p class="product-description">
+            Experience virtual reality like never before with our high-quality VR headset. Immersive and comfortable for long wear.
+        </p>
+        <p class="product-price">$299.99</p>
+        <button class="buy-now-button">Buy Now</button>
+    </div>
+</div>
 
 <style>
     * {
@@ -35,119 +31,67 @@
 }
 
 body {
-  /* solid background */
-  background: rgb(0,212,255);
-  
-  /* gradient background*/
-  background: linear-gradient(45deg, rgba(0,212,255,1) 0%, rgba(11,3,45,1) 100%);    
-  
-  /* photo background */
-  background-image: url(https://images.unsplash.com/photo-1619204715997-1367fe5812f1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1889&q=80);
-  background-size: cover;
-  background-position: center;  
-  
-  display: flex;
-  align-items: center;
-  justify-content: center;    
-  height: 100vh;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f5f5f5;
 }
 
-.container {
-  backdrop-filter: blur(16px) saturate(180%);
-  -webkit-backdrop-filter: blur(16px) saturate(180%);
-  background-color: rgba(17, 25, 40, 0.25);
-  border-radius: 12px;
-  border: 1px solid rgba(255, 255, 255, 0.125);  
-  padding: 38px;  
-  filter: drop-shadow(0 30px 10px rgba(0,0,0,0.125));
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content:center;
-  text-align: center;
-  
+.product-card {
+    display: flex;
+    max-width: 700px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    overflow: hidden;
 }
 
-.wrapper {
-  width: 100%;
-  height: 100%;
-  
+.product-image img {
+    width: 250px;
+    height: auto;
+    object-fit: cover;
 }
 
-.banner-image {
-  background-image: url(https://images.unsplash.com/photo-1641326201918-3cafc641038e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80);
-  background-position: center;
-  background-size: cover;
-  height: 300px;
-  width: 100%;
-  border-radius: 12px;
-  border: 1px solid rgba(255,255,255, 0.255)
+.product-details {
+    padding: 20px;
+    flex: 1;
 }
 
-h1{
-  font-family: 'Righteous', sans-serif;
-  color: rgba(255,255,255,0.98);
-  text-transform: uppercase;
-  font-size: 2.4rem;
+.product-title {
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 10px;
 }
 
-p {
-  color: #fff;
-  font-family: 'Lato', sans-serif;
-  text-align: center;
-  font-size: 0.8rem;
-  line-height: 150%;
-  letter-spacing: 2px;
-  text-transform: uppercase;
+.product-description {
+    font-size: 1em;
+    color: #666;
+    margin-bottom: 20px;
 }
 
-.button-wrapper{
-  margin-top: 18px;
+.product-price {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
 }
 
-.btn {
-  border: none;
-  padding: 12px 24px;
-  border-radius: 24px;
-  font-size: 12px;
-  font-size: 0.8rem;  
-  letter-spacing: 2px;  
-  cursor: pointer;
+.buy-now-button {
+    padding: 12px 20px;
+    font-size: 1em;
+    color: #fff;
+    background-color: #ff6200;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
 
-.btn + .btn {
-  margin-left: 10px;
+.buy-now-button:hover {
+    background-color: #e65500;
 }
 
-.outline {
-  background: transparent;
-  color: rgba(0, 212, 255, 0.9);
-  border: 1px solid rgba(0, 212, 255, 0.6);
-  transition: all .3s ease;
-  
-}
-
-.outline:hover{
-  transform: scale(1.125);
-  color: rgba(255, 255, 255, 0.9);
-  border-color: rgba(255, 255, 255, 0.9);
-  transition: all .3s ease;  
-}
-
-.fill {
-  background: rgba(0, 212, 255, 0.9);
-  color: rgba(255,255,255,0.95);
-  filter: drop-shadow(0);
-  font-weight: bold;
-  transition: all .3s ease; 
-}
-
-.fill:hover{
-  transform: scale(1.125);  
-  border-color: rgba(255, 255, 255, 0.9);
-  filter: drop-shadow(0 10px 5px rgba(0,0,0,0.125));
-  transition: all .3s ease;    
-}
 </style>
 
 </body>
