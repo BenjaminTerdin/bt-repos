@@ -18,6 +18,10 @@
         margin-left: 70px;
         margin-top: 20px;
     }
+
+    .section_footer h2 { font-size: 10px; }
+    .section_footer p { font-size: 10px; }
+    .section_footer li { font-size: 10px;}
 }
 
 
@@ -143,6 +147,7 @@
     .mean-container .mean-nav ul li a.mean-expand {
         top: 0;
     }
+    .logo{font-size: 20px;}
 
 
 
@@ -185,7 +190,9 @@ width: 30%;
 .image_6 { margin-top: 50px; }
 .social_icon { width: 70%; }
 .social_icon ul { display: inline-flex; }
-.section_footer { margin-top: 0px; }
+.section_footer h2 { font-size: 10px; }
+.section_footer p { font-size: 10px; }
+.section_footer li { font-size: 10px;}
 .navbar-expand-lg .navbar-nav .nav-link {
     padding-right: 5px;
     padding-left: 10px;
@@ -266,6 +273,7 @@ width: 30%;
 .social_icon { width: 70%; }
 .social_icon ul { display: inline-flex; }
 .section_footer { margin-top: 0px; }
+
 
 
 
