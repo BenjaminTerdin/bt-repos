@@ -473,7 +473,8 @@ ul.link li {
 #my_slider a.carousel-control-prev { display: none; }
 .banner_section { padding-bottom: 90px; }
 .about_section { padding-top: 0px; }
-.product_text { font-size: 33px;}
+.about_text { font-size: 27px;}
+.product_text { font-size: 27px;}
 .see_main { width: 135px; }
 .video_text_2 { font-size: 37px; }
 .controller_text_2 { font-size: 31px; }
@@ -496,3 +497,19 @@ ul.link li {
 
 
 }
+
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .product-text {
+      font-size: 1.2rem;
+    }
+  
+    .product-title {
+      font-size: 1rem;
+    }
+  
+    .product-description {
+      font-size: 0.8rem;
+    }
+  }

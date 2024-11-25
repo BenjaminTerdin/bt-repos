@@ -1,99 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product Card</title>
-    <link rel="stylesheet" href="style.css">
+<!-- basic -->
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- mobile metas -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+<!-- site metas -->
+<title>techzmarter.com</title>
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta name="author" content="">	
+<!-- icon-link css -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<!-- bootstrap css -->
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<!-- style css -->
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+<link rel="stylesheet" href="css/product.css">
+<!-- Scrollbar Custom CSS -->
+<link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+<!-- Tweaks for older IEs-->
+<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+<!-- owl stylesheets --> 
+<link rel="stylesheet" href="css/owl.carousel.min.css">
+<link rel="stylesheet" href="css/owl.theme.default.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
 </head>
 <body>
+	<!-- header section start -->
+	<div class="header_section">
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="logo"><a href="index.html"><b>techzmarter</b></a></div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html">ABOUT</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="product.html">PRODUCTS</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">CONTACT</a>
+                </li>
+              </ul>
+            </div>
+        </nav>
+	</div>
+	<!-- header section end -->
 
-<div class="product-card">
-    <div class="product-image">
-        <img src="images/OculusQuest2.png" alt="VR Headset">
+  <!-- product section start -->
+
+  <div class="product1-page">
+    <!-- Showcased Product Section -->
+    <div class="product1-showcase">
+        <img src="images/OculusQuest2.png" alt="Product Image" class="product1-showcase-image">
+        <div class="product1-info">
+            <h1 class="product1-title">Oculus Quest 2 VR Headset 128GB</h1>
+            <button class="product1-buy-now-button">Buy Now</button>
+            <!-- Price tag positioned here at the bottom-left of .product1-info -->
+            <div class="product1-price-tag">$299.99</div>
+        </div>
     </div>
-    <div class="product-details">
-        <h2 class="product-title">VR Headset</h2>
-        <p class="product-description">
-            Experience virtual reality like never before with our high-quality VR headset. Immersive and comfortable for long wear.
-        </p>
-        <p class="product-price">$299.99</p>
-        <button class="buy-now-button">Buy Now</button>
+  </div>
+
+  <!-- Other Products Section -->
+  <div class="product1-other-products">
+    <div class="product1-other-product">
+        <img src="images/jblheadphones.png" alt="Other Product" class="product1-other-product-image">
+        <div class="product1-other-product-info">
+            <h2 class="product1-other-product-title">Other Product 1</h2>
+            <button class="product1-check-now-button">Shop Now</button>
+        </div>
     </div>
+    <div class="product1-other-product">
+        <img src="images/tplinkcam.png" alt="Other Product" class="product1-other-product-image">
+        <div class="product1-other-product-info">
+            <h2 class="product1-other-product-title">Other Product 2</h2>
+            <button class="product1-check-now-button">Shop Now</button>
+        </div>
+    </div>
+      <!-- Add more products as needed -->
+  </div>
 </div>
 
-<style>
-    * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-}
+  <!-- product section end -->
+  <!-- footer section start -->
+  <div style="margin-top: 70px;" class="section_footer ">
+      <div class="container"> 
+          <div class="footer_section_2">
+            <div class="row">
 
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #f5f5f5;
-}
+              <div class="col-sm-6 col-md-6 col-lg-3">
+                <h2 class="account_text">techzmarter</h2>
+                <div class="useful_link">
+                  <ul>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                  </ul>
+                </div>
+              </div>
 
-.product-card {
-    display: flex;
-    max-width: 700px;
-    background-color: #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    border-radius: 8px;
-    overflow: hidden;
-}
+                <div class="col-sm-6 col-md-6 col-lg-3">
+                  <h2 class="account_text">About</h2>
+                  <p class="ipsum_text_2">techzmarter offers the latest tech news, reviews, and insights to help you choose the best gadgets.</p>
+                </div>
 
-.product-image img {
-    width: 250px;
-    height: auto;
-    object-fit: cover;
-}
+                <div class="col-sm-6 col-md-6 col-lg-3">
+                <h2 class="account_text">Contact</h2>
+                <p class="ipsum_text_2">For inquiries, reach out to us at techzmarter@gmail.com or connect with us on social media. We're here to help!</p>
+                </div>
 
-.product-details {
-    padding: 20px;
-    flex: 1;
-}
+                <div class="socials">
+                  <a href="https://www.tiktok.com/@techzmarter" target="_blank"><img src="images/tiktok-icon.png" class="tiktok-icon"></a>
+                  <a href="https://www.instagram.com/techzmarter" target="_blank"><img src="images/instagram-icon.png" class="instagram-icon"></a>
+                  <a href="https://www.youtube.com/@techzmarter" target="_blank"><img src="images/youtube-icon.png" class="youtube-icon"></a>
+                </div>
 
-.product-title {
-    font-size: 1.8em;
-    color: #333;
-    margin-bottom: 10px;
-}
+                  
 
-.product-description {
-    font-size: 1em;
-    color: #666;
-    margin-bottom: 20px;
-}
+         
+  <!-- footer section end -->
 
-.product-price {
-    font-size: 1.5em;
-    font-weight: bold;
-    color: #333;
-    margin-bottom: 20px;
-}
-
-.buy-now-button {
-    padding: 12px 20px;
-    font-size: 1em;
-    color: #fff;
-    background-color: #ff6200;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.buy-now-button:hover {
-    background-color: #e65500;
-}
-
-</style>
-
-</body>
-
-</html>
+  <!-- Javascript files-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.0.0.min.js"></script>
+    <script src="js/plugin.js"></script>
+    <!-- sidebar -->
+    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="js/custom.js"></script>
+    <!-- javascript --> 
+    <script src="js/owl.carousel.js"></script>
+    <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+    <script>
+    $(document).ready(function(){
+    $(".fancybox").fancybox({
+        openEffect: "none",
+        closeEffect: "none"
+        });
+      });
+    </script>
+  
+  </body>
+  </html>
