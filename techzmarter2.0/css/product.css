@@ -1,0 +1,462 @@
+/*--------------------------------------------------------------------- File Name: product.css ---------------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------------- import Fonts ---------------------------------------------------------------------*/
+
+@import url('https://fonts.googleapis.com/css?family=Rajdhani:300,400,500,600,700');
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+@font-face {
+font-family: "Righteous";
+src: url("../fonts/Righteous-Regular.ttf");
+src: url("../fonts/Lato-Regular.ttf");
+}
+/*****---------------------------------------- 1) font-family: 'Rajdhani', sans-serif;
+ 2) font-family: 'Poppins', sans-serif;
+ ----------------------------------------*****/
+
+
+/*--------------------------------------------------------------------- import Files ---------------------------------------------------------------------*/
+
+@import url(animate.min.css);
+@import url(normalize.css);
+@import url(icomoon.css);
+@import url(css/font-awesome.min.css);
+@import url(meanmenu.css);
+@import url(owl.carousel.min.css);
+@import url(swiper.min.css);
+@import url(slick.css);
+@import url(jquery.fancybox.min.css);
+@import url(jquery-ui.css);
+@import url(nice-select.css);
+
+/*--------------------------------------------------------------------- skeleton ---------------------------------------------------------------------*/
+
+* {
+     box-sizing: border-box !important;
+     transition: ease all 0.5s;
+}
+
+html {
+     scroll-behavior: smooth;
+}
+
+body {
+     color: #666666;
+     font-size: 14px;
+     font-family:Poppins;
+     line-height: 1.80857;
+     font-weight: normal;
+     overflow-x: hidden;
+}
+
+
+a {
+     color: #1f1f1f;
+     text-decoration: none !important;
+     outline: none !important;
+     -webkit-transition: all .3s ease-in-out;
+     -moz-transition: all .3s ease-in-out;
+     -ms-transition: all .3s ease-in-out;
+     -o-transition: all .3s ease-in-out;
+     transition: all .3s ease-in-out;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+     letter-spacing: 0;
+     font-weight: normal;
+     position: relative;
+     padding: 0 0 10px 0;
+     font-weight: normal;
+     line-height: normal;
+     color: #111111;
+     margin: 0
+}
+
+h1 {
+     font-size: 24px
+}
+
+h2 {
+     font-size: 22px
+}
+
+h3 {
+     font-size: 18px
+}
+
+h4 {
+     font-size: 16px
+}
+
+h5 {
+     font-size: 14px
+}
+
+h6 {
+     font-size: 13px
+}
+
+*,
+*::after,
+*::before {
+     -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+     box-sizing: border-box;
+}
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+     color: #212121;
+     text-decoration: none!important;
+     opacity: 1
+}
+
+button:focus {
+     outline: none;
+}
+
+ul,
+li,
+ol {
+     margin-right: 30px;
+     padding: 0px;
+     list-style: none;
+}
+
+p {
+     margin: 20px;
+     font-weight: 300;
+     font-size: 15px;
+     line-height: 24px;
+}
+
+a {
+     color: #222222;
+     text-decoration: none;
+     outline: none !important;
+}
+
+a,
+.btn {
+     text-decoration: none !important;
+     outline: none !important;
+     -webkit-transition: all .3s ease-in-out;
+     -moz-transition: all .3s ease-in-out;
+     -ms-transition: all .3s ease-in-out;
+     -o-transition: all .3s ease-in-out;
+     transition: all .3s ease-in-out;
+}
+
+img {
+     max-width: 100%;
+     height: auto;
+     border-radius: 20px;
+     margin-bottom: 20px;
+}
+
+
+
+
+
+/* Product Section */
+.product-section {
+    padding: 20px;
+    background-color: #f5f5f5;
+  }
+  
+  .product-text {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  /* Container */
+  .container-list {
+    width: 100%;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  /* Grid Layout */
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+  }
+  
+  /* Product Card */
+  .product-card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s ease;
+  }
+  
+  .product-card:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Product Image */
+  .product-image {
+    width: 100%;
+    height: 250px;
+    background-color: #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  
+  .product-image img {
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain;
+  }
+  
+  /* Product Info */
+  .product-info {
+    padding: 15px;
+    flex-grow: 1;
+  }
+  
+  .product-title {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .product-description {
+    font-size: 0.9rem;
+    color: #666;
+  }
+  
+  /* Footer */
+  .product-footer {
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-top: 1px solid #eee;
+  }
+  
+  .product-price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .price-label {
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  .price-amount {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #4a4a4a;
+  }
+
+  .price-amount mark{
+    color: #599EE9;
+    background-color: #F9F9F9;
+  }
+  
+  /* Add to Cart Button */
+  .add-to-cart {
+    width: 100%;
+    padding: 10px;
+    background-color: #3a3a38;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  
+  .add-to-cart:hover {
+    background-color: #2a2a28;
+  }
+  
+
+
+/*PRODUCT 1!!!*/
+.product1-page {
+     max-width: 1200px;
+     margin: 0 auto;
+     padding: 20px;
+ }
+ 
+ .product1-showcase {
+     margin-top: 150px;
+     display: flex;
+     align-items: flex-start;
+     margin-bottom: 30px;
+ }
+ 
+ .product1-showcase-image {
+     max-width: 400px;
+     margin-right: 20px;
+     border-radius: 10px;
+     object-fit: cover;
+ }
+ 
+ .product1-info {
+     height: 300px; /* Adjusted height to make room for both the price tag and button */
+     flex: 1;
+     background-color: #fff;
+     padding: 40px;
+     border-radius: 10px;
+     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+     position: relative; /* Positioning context for both the button and price tag */
+ }
+ 
+ .product1-title {
+     font-size: 24px;
+     margin: 0 0 10px;
+ }
+ 
+ .product1-buy-now-button {
+     width: 150px;
+     font-size: 18px;
+     text-align: center;
+     background-color: #fcfcfd;
+     color: #191919;
+     border-left: 10px solid #599ee9;
+     border-radius: 30px;
+     border-right: 10px solid #599ee9;
+     border-top: 4px solid #599ee9;
+     border-bottom: 4px solid #599ee9;
+     padding: 5px 0px;
+     margin-top: 40px;
+     position: absolute; /* Position the button relative to .product1-info */
+     bottom: 20px; /* Distance from the bottom of the container */
+     right: 20px; /* Distance from the right side of the container */
+     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+     transition: 0.3s;
+ }
+ 
+ .product1-buy-now-button:hover {
+     transform: scale(1.05);
+     color: #599ee9;
+ }
+ 
+ /* Price Tag Styling at the bottom-left of the product info */
+ .product1-price-tag {
+     position: absolute; /* Position relative to .product1-info */
+     bottom: 20px; /* Distance from the bottom of the container */
+     left: 20px; /* Distance from the left of the container */
+     background-color: #f7c008; /* Bright yellow background */
+     color: #191919; /* Dark text for visibility */
+     padding: 8px 15px;
+     border-radius: 20px;
+     font-size: 18px;
+     font-weight: bold;
+     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Shadow to make it stand out */
+ }
+ 
+ .product1-price-tag:hover {
+     background-color: #e6b507; /* Darker yellow when hovered */
+ }
+ 
+ .product1-other-products {
+     position: relative;
+     margin-top: 150px;
+     display: flex;
+     flex-wrap: wrap;
+     gap: 20px;
+ }
+
+ .product1-other-product {
+     display: flex; /* Enables side-by-side layout */
+     align-items: flex-start; /* Align content at the top */
+     background-color: #fff;
+     padding: 10px;
+     border-radius: 10px;
+     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+     width: calc(50% - 10px); /* Two products per row */
+     position: relative;
+ }
+ 
+ .product1-other-product-image {
+     max-width: 180px;
+     height: auto;
+     margin: 15px; /* Space between image and info */
+     border-radius: 5px;
+     object-fit: cover;
+ }
+ 
+ .product1-other-product-info {
+     position: relative; 
+     flex: 1; 
+     padding: 10px;
+     border-radius: 10px;
+     height: 200px; 
+     display: flex; 
+     flex-direction: column; 
+     justify-content: space-between; 
+ }
+
+ .product1-check-now-button {
+     position: absolute; 
+     bottom: 4px; 
+     right: 12px; 
+     font-size: 15px;
+     width: 115px;
+     text-align: center;
+     background-color: #fcfcfd;
+     color: #191919;
+     border-left: 10px solid #599ee9;
+     border-radius: 30px;
+     border-right: 10px solid #599ee9;
+     border-top: 4px solid #599ee9;
+     border-bottom: 4px solid #599ee9;
+     padding: 5px 0px;
+     transition: 0.3s;
+ }
+ 
+ .product1-check-now-button:hover {
+     transform: scale(1.05);
+     color: #599ee9;
+ }
+ 
+ .product1-other-product-title {
+     font-size: 18px;
+     margin: 0 0 10px;
+ }
+ 
+ @media (max-width: 768px) {
+     .product1-showcase {
+          margin-top: 100px;
+         flex-direction: column;
+         align-items: center;
+     }
+
+     .product1-info {
+          min-height: 300px;
+     }
+ 
+     .product1-showcase-image {
+         margin-bottom: 20px;
+         max-width: 60%;
+         min-width: 350px;
+     }
+ 
+     .product1-other-product {
+         width: 100%; /* Stack products vertically on smaller screens */
+     }
+ }
