@@ -316,7 +316,7 @@ img {
  }
  
  .product1-info {
-     height: 300px; /* Adjusted height to make room for both the price tag and button */
+     height: 400px; /* Adjusted height to make room for both the price tag and button */
      flex: 1;
      background-color: #fff;
      padding: 40px;
@@ -328,6 +328,11 @@ img {
  .product1-title {
      font-size: 24px;
      margin: 0 0 10px;
+ }
+ .product1-description {
+     margin: 0;
+     margin-bottom: 50px;
+
  }
  
  .product1-buy-now-button {
@@ -360,25 +365,24 @@ img {
      position: absolute; /* Position relative to .product1-info */
      bottom: 20px; /* Distance from the bottom of the container */
      left: 20px; /* Distance from the left of the container */
-     background-color: #f7c008; /* Bright yellow background */
-     color: #191919; /* Dark text for visibility */
+     color: #4a4a4a;
      padding: 8px 15px;
      border-radius: 20px;
      font-size: 18px;
      font-weight: bold;
-     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Shadow to make it stand out */
  }
- 
- .product1-price-tag:hover {
-     background-color: #e6b507; /* Darker yellow when hovered */
+ .product1-price-tag mark{
+     color: #599EE9;
+     background-color: transparent;
  }
  
  .product1-other-products {
      position: relative;
-     margin-top: 150px;
+     margin-top: 80px;
      display: flex;
      flex-wrap: wrap;
      gap: 20px;
+     justify-content: center;
  }
 
  .product1-other-product {
@@ -388,7 +392,8 @@ img {
      padding: 10px;
      border-radius: 10px;
      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-     width: calc(50% - 10px); /* Two products per row */
+     width: calc(50% - 3%); /* Two products per row */
+     max-width: 575px;
      position: relative;
  }
  
@@ -448,6 +453,8 @@ img {
 
      .product1-info {
           min-height: 300px;
+          width: 100%;
+          max-width: 575px;
      }
  
      .product1-showcase-image {
@@ -456,7 +463,12 @@ img {
          min-width: 350px;
      }
  
+     .product1-other-products{
+          margin-top: 40px;
+     }
      .product1-other-product {
          width: 100%; /* Stack products vertically on smaller screens */
+         margin: 0 20px;
      }
+     
  }
