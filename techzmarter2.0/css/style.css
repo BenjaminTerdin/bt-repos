@@ -315,22 +315,21 @@ button {
     padding-top: 50px;
 }
 
-.shop_bt {
+.button-1 {
     width: 35%;
     float: left;
     font-size: 16px;
     text-align: center;
-    background-color: #2A2A28;
+    background-color: #599EE9;
+    color: black;
     padding: 10px 5px;
     border-radius: 5px;
     margin-top: 40px;
 }
 
-.shop_bt a{
-    color: #ffffff;
-}
-.shop_bt:hover{
+.button-1:hover{
     background-color: #4b4b48;
+    color: white;
     box-shadow: 5px 5px 30px #1e1f20;
     cursor: pointer;
 }
