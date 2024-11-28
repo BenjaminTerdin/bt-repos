@@ -336,9 +336,11 @@ button {
 
 #my_slider a.carousel-control-prev {
     position: absolute;
-    left: 15px;
+    left: 20px;
     top: 100%;
     background-color: #599ee9;
+    width: 55px;
+    height: 55px;
 }
 #my_slider .carousel-control-prev, #my_slider .carousel-control-next {
     width: 65px;
@@ -356,8 +358,10 @@ button {
 }
 #my_slider a.carousel-control-next {
     position: absolute;
-    left:100px;
+    left: 115px;
     top: 100%;
+    height: 55px;
+    width: 55px;
 }
 
 .about_section{
