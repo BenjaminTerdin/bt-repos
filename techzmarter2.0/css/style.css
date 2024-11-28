@@ -328,7 +328,6 @@ button {
 }
 
 .button-1:hover{
-    background-color: #4b4b48;
     color: white;
     box-shadow: 5px 5px 30px #1e1f20;
     cursor: pointer;
@@ -352,9 +351,10 @@ button {
     border-radius: 100px;
 }
 
-#my_slider .carousel-control-prev:hover, #my_slider .carousel-control-next:hover, #my_slider .carousel-control-prev:focus, #my_slider .carousel-control-next:focus {
+#my_slider .carousel-control-prev:hover, #my_slider .carousel-control-next:hover{
     background: #599ee9;
     color: #fff;
+    box-shadow: 5px 5px 30px #1e1f20;
 }
 #my_slider a.carousel-control-next {
     position: absolute;
@@ -419,19 +419,19 @@ button {
     font-size: 16px;
     text-align: center;
     background-color: #2A2A28;
+    color: white;
     border-radius: 5px;
     padding: 5px 0px;
     margin-top: 40px;
 }
 
-.shop_bt_2 a{
-    color: #ffffff;
-}
 .shop_bt_2:hover{
+    color: white;
     background-color: #4b4b48;
-    box-shadow: 5px 5px 30px #1e1f20;
     cursor: pointer;
 }
+
+#send-button {float: left; margin-left: 15px; }
 
 .product_section{
     width: 100%;
