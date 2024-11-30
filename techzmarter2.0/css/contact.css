@@ -4,22 +4,20 @@
     display: flex;         
     justify-content: center; 
     align-items: center;  
-    min-height: calc(100vh - 100px); 
+    height: 1000px;
 }
 
 .contact-container {
     background: #fff;
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    width: 400px;
+    width: 700px;
     padding: 20px;
-    text-align: center;
 }
 .form-title {
     font-size: 24px;
     font-weight: bold;
     color: #333;
-    text-align: center;
     margin-bottom: 20px;
 }
 
@@ -46,6 +44,7 @@
     border: 1px solid #ddd;
     border-radius: 5px;
     font-size: 14px;
+    resize: none;
 }
 
 .form-group input:focus,
@@ -70,4 +69,10 @@
 
 .submit-btn:hover {
     background-color: #2563eb;
+}
+
+@media (max-width: 1000px){
+    .contact-container {
+        width: 80%;
+    }
 }

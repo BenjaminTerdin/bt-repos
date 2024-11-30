@@ -54,7 +54,7 @@
 @media only screen and (min-width: 599px) and (max-width: 767px) {
 
     .layout_padding{
-        padding-top: 30px;
+        padding-top: 60px;
     }
     .cart-content-right {
         padding-bottom: 5px;
@@ -150,7 +150,7 @@
         padding-bottom: 5px;
     }
     .layout_padding{
-        padding-top: 30px;
+        padding-top: 50px;
     }
     .megamenu>.row [class*="col-"] {
         padding: 0px;
