@@ -59,24 +59,28 @@
   <!-- contact section start -->
   <div class="center-wrapper">
     <div class="contact-container">
-        <h1 class="form-title">Reach out to us</span></h1>
-        <form class="contact-form">
-            <div class="form-group">
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name" placeholder="Enter your name" required>
-            </div>
-            <div class="form-group">
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" placeholder="Enter your email" required>
-            </div>
-            <div class="form-group">
-                <label for="message">Message</label>
-                <textarea id="message" name="message" rows="4" placeholder="Write your message" required></textarea>
-            </div>
-            <button type="submit" class="add-to-cart">Send Message</button>
-        </form>
+      <h1 class="form-title">Reach out to us</h1>
+      
+      <!-- Hidden iframe for the form submission -->
+      <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="4003f8e8-b481-4ab4-b3d3-0c235d6e6783">
+
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="4" placeholder="Write your message" required></textarea>
+        </div>
+        <button type="submit" class="add-to-cart">Send Message</button>
+      </form>
     </div>
-</div>
+  </div>
   <!-- contact section end -->
   <!-- footer section start -->
   <div class="section_footer ">

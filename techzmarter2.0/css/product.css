@@ -498,6 +498,27 @@ img {
           left: 70px;
      }
  }  
+ @media (max-width: 440px) {
+  .product1-price-tag-other {
+       left: 50px;
+  }
+ }
+@media (max-width: 415px) {
+  .product1-price-tag-other {
+       left: 30px;
+  }
+}  
+@media (max-width: 390px) {
+  .product1-price-tag-other {
+       left: 20px;
+  }
+}  
+@media (max-width: 375px) {
+  .product1-price-tag-other {
+       left: 0;
+  }
+}  
+
  
  
  .product1-other-products {

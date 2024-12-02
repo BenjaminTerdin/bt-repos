@@ -429,6 +429,7 @@ button {
     color: white;
     background-color: #4b4b48;
     cursor: pointer;
+    scale: 1.05;
 }
 
 #send-button {float: left; margin-left: 15px; }
@@ -556,6 +557,7 @@ button {
     color: #ffffff;
     margin-left: 0px;
     margin-top: 0px;
+    margin-right: 20px;
 }
 
 .section_footer {

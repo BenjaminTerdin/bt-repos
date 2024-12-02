@@ -21,7 +21,7 @@
 
     .row {margin-right: 30px;}
     .section_footer h2 { font-size: 20px; }
-    .section_footer p { font-size: 14px; }
+    .section_footer p { font-size: 14px; padding-right: 20px;}
     .section_footer li { font-size: 14px;}
 
     .image_3 {
@@ -565,11 +565,21 @@ ul.link li {
 
 
 
+}
 
 
+@media (max-width: 400px){
+
+    .navbar-toggler{
+        margin-left: 20px;
+    }
+    .socials img{
+        margin-left: 55px;
+    }
 
 
 }
+
 
 
 /* Responsive Adjustments */
