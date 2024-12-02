@@ -295,7 +295,13 @@ img {
   
 
 
-/*PRODUCT 1!!!*/
+
+
+
+
+/*PRODUCTS!!!*/     /*PRODUCTS!!!*/     /*PRODUCTS!!!*/     /*PRODUCTS!!!*/     /*PRODUCTS!!!*/     /*PRODUCTS!!!*/     /*PRODUCTS!!!*/     /*PRODUCTS!!!*/     /*PRODUCTS!!!*/
+
+
 .product1-page {
      max-width: 1200px;
      margin: 0 auto;
@@ -306,7 +312,6 @@ img {
      margin-top: 150px;
      display: flex;
      align-items: flex-start;
-     margin-bottom: 30px;
  }
  
  .product1-showcase-image {
@@ -337,16 +342,12 @@ img {
  }
  
  .product1-buy-now-button {
+     border-radius: 5px;
      width: 150px;
-     font-size: 18px;
+     font-size: 16px;
      text-align: center;
-     background-color: #fcfcfd;
-     color: #191919;
-     border-left: 10px solid #599ee9;
-     border-radius: 30px;
-     border-right: 10px solid #599ee9;
-     border-top: 4px solid #599ee9;
-     border-bottom: 4px solid #599ee9;
+     background-color: #2A2A28;
+     color: white;
      padding: 5px 0px;
      margin-top: 40px;
      position: absolute; /* Position the button relative to .product1-info */
@@ -358,7 +359,7 @@ img {
  
  .product1-buy-now-button:hover {
      transform: scale(1.05);
-     color: #599ee9;
+     background-color: #4a4a4a;
  }
  
  /* Price Tag Styling at the bottom-left of the product info */
@@ -376,10 +377,132 @@ img {
      color: #599EE9;
      background-color: transparent;
  }
+
+
+ .product1-technical-info{
+     display: flex;
+     justify-content: center;
+ }
+ .specification-container{
+     width: 1100px;
+     margin: 30px;
+ }
+ #specification-title{
+     font-weight: 600;
+ }
+ .specs-container{
+     display: flex;
+     gap: 50px;
+ }
+
+ .product1-specification{
+     font-weight: 500;
+ }
+ .product1-specification-details{
+     font-weight: 500;
+     color: #599EE9;
+ }
+
+ .review-section {
+     max-width: 500px;
+     margin: 0 auto;
+     padding: 20px;
+     background-color: #f9f9f9;
+     border: 1px solid #ddd;
+     border-radius: 8px;
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   }
+   
+   .review-title {
+     font-size: 1.5rem;
+     font-weight: bold;
+     margin-bottom: 20px;
+     text-align: center;
+     color: #333;
+   }
+   
+   .review {
+     margin-bottom: 20px;
+   }
+   
+   .review-text {
+     font-size: 1rem;
+     line-height: 1.5;
+     margin: 0;
+     color: #555;
+   }
+   
+   .review-author {
+     font-size: 0.875rem;
+     font-style: italic;
+     text-align: right;
+     margin-top: 5px;
+     color: #777;
+   }
+   
+
+
+
+  /* Price Tag Styling at the bottom-left of the product info */
+  .product1-price-tag-other {
+     position: absolute; /* Position relative to .product1-info */
+     bottom: 0; /* Distance from the bottom of the container */
+     left: 20px; /* Distance from the left of the container */
+     color: #4a4a4a;
+     padding: 8px 15px;
+     border-radius: 20px;
+     font-size: 18px;
+     font-weight: bold;
+ }
+ .product1-price-tag-other mark{
+     color: #599EE9;
+     background-color: transparent;
+ }
+
+ /* Responsive Adjustment for Price Tag */
+@media (max-width: 1000px) {
+     .product1-price-tag-other {
+          bottom: 45px; 
+          left: 100px;
+     }
+ }  
+ @media (max-width: 910px) {
+     .product1-price-tag-other {
+          left: 70px;
+     }
+ }
+ @media (max-width: 870px) {
+     .product1-price-tag-other {
+          left: 50px;
+     }
+ }
+ @media (max-width: 810px) {
+     .product1-price-tag-other {
+          left: 30px;
+     }
+ }
+ @media (max-width: 768px) {
+     .product1-price-tag-other {
+          bottom: 0;
+     }
+ }
+
+ @media (max-width: 525px) {
+     .product1-price-tag-other {
+          bottom: 45px; 
+          left: 110px;
+     }
+ }  
+ @media (max-width: 480px) {
+     .product1-price-tag-other {
+          left: 70px;
+     }
+ }  
+ 
  
  .product1-other-products {
      position: relative;
-     margin-top: 80px;
+     margin-top: 50px;
      display: flex;
      flex-wrap: wrap;
      gap: 20px;
@@ -418,26 +541,23 @@ img {
  }
 
  .product1-check-now-button {
+     border-radius: 5px;
      position: absolute; 
      bottom: 4px; 
      right: 12px; 
-     font-size: 15px;
+     font-size: 14px;
      width: 115px;
+     font-size: 15px;
      text-align: center;
-     background-color: #fcfcfd;
-     color: #191919;
-     border-left: 10px solid #599ee9;
-     border-radius: 30px;
-     border-right: 10px solid #599ee9;
-     border-top: 4px solid #599ee9;
-     border-bottom: 4px solid #599ee9;
+     background-color: #2A2A28;
+     color: white;
      padding: 5px 0px;
      transition: 0.3s;
  }
  
  .product1-check-now-button:hover {
      transform: scale(1.05);
-     color: #599ee9;
+     background-color: #4a4a4a;
  }
  
  .product1-other-product-title {
