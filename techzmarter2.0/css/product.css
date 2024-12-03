@@ -385,7 +385,7 @@ img {
   display: flex;
   justify-content: center; /* Center the content horizontally */
   align-items: flex-start; /* Align content to the top */
-  gap: 30px; /* Space between specifications and review sections */
+  gap: 50px; /* Space between specifications and review sections */
   padding: 20px;
   max-width: 1100px;
   width: 100%;
@@ -609,6 +609,7 @@ input[type="radio"] {
      flex-wrap: wrap;
      gap: 20px;
      justify-content: center;
+     display: none;
  }
 
  .product1-other-product {
