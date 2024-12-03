@@ -71,43 +71,73 @@
   </div>
 
   <div class="product1-technical-info">
-      <div class="specification-container">
-          <h1 id="specification-title" class="product1-title">Specification</h1>
-          <div class="specs-container">
+    <!-- Specifications Section -->
+    <div class="specification-container">
+      <h1 id="specification-title" class="product1-title">Specifications</h1>
+      <div class="specs-container">
+        <h4 class="product1-specification">
+          Brand: <br>
+          Color: <br>
+          Form: <br>
+          Noise Control: <br>
+          Model Name: <br>
+          Connection: <br>
+        </h4>
+        <h4 class="product1-specification-details">
+          JBL <br>
+          Black, White, Purple, Blue <br>
+          In-Ear <br>
+          Noise Cancelling <br>
+          JBL Tune Buds <br>
+          Bluetooth <br>
+        </h4>
+      </div>
+    </div>
 
-            <h4 class="product1-specification">
-              Brand: <br>
-              Color: <br>
-              Form: <br>
-              Noise control: <br>
-              Modelname: <br>
-              Connection: <br>
-            </h4>
+    <!-- Review Slider Section -->
+    <div class="review-section-slider">
+      <input type="radio" name="slider" id="slide1" checked>
+      <input type="radio" name="slider" id="slide2">
+      <input type="radio" name="slider" id="slide3">
 
-              <h4 class="product1-specification-details">
-                JBL <br>
-                Black, White, Purple, Blue <br>
-                In-Ear <br>
-                Noise Cancelling <br>
-                JBL Tune Buds <br>
-                Bluetooth<br>
-              </h4>
-            </div>
-          </div>
+      <div class="slider-wrapper">
+        <div class="slide">
+          <h4 class="trustpilot">Product reviews from <span style="color: #04DA8D;">★</span><span style="font-weight: 600;">TrustPilot</span></h4>
+          <p class="review-text">"This product exceeded my expectations. Great quality and fast delivery!"</p>
+          <p class="review-author">- Jane Doe</p>
         </div>
+        <div class="slide">
+          <h4 class="trustpilot">Product reviews from <span style="color: #04DA8D;">★</span><span style="font-weight: 600;">TrustPilot</span></h4>
+          <p class="review-text">"Amazing customer service and excellent craftsmanship. Highly recommend!"</p>
+          <p class="review-author">- John Smith</p>
+        </div>
+        <div class="slide">
+          <h4 class="trustpilot">Product reviews from <span style="color: #04DA8D;">★</span><span style="font-weight: 600;">TrustPilot</span></h4>
+          <p class="review-text">"Fantastic product! Worth every penny. I will definitely buy again!"</p>
+          <p class="review-author">- Emily Rose</p>
+        </div>
+      </div>
+
+      <div class="slider-controls">
+        <label for="slide1"></label>
+        <label for="slide2"></label>
+        <label for="slide3"></label>
+      </div>
+    </div>
+  </div>
 
   <!-- Other Products Section -->
   <div class="product1-other-products">
     <div class="product1-other-product">
-        <img src="images/jblheadphones.png" alt="Other Product" class="product1-other-product-image">
+        <a href="product2.html"><img src="images/jblheadphones.png" alt="Other Product" class="product1-other-product-image"></a>
         <div class="product1-other-product-info">
             <h2 class="product1-other-product-title">JBL Tune Buds</h2>
             <span class="product1-price-tag-other"><mark>$</mark>99.99</span>
-            <button class="product1-check-now-button">See More</button>
+            <a href="product2.html"><button class="product1-check-now-button">See More</button></a>
         </div>
     </div>
     <div class="product1-other-product">
-        <img src="images/tplinkcam.png" alt="Other Product" class="product1-other-product-image">
+        <a href="product3.html"><img src="images/tplinkcam.png" alt="Other Product" class="product1-other-product-image"></a>
         <div class="product1-other-product-info">
             <h2 class="product1-other-product-title">TP-Link Tapo C320WS</h2>
             <span class="product1-price-tag-other"><mark>$</mark>129.99</span>
