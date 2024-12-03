@@ -234,9 +234,8 @@ width: 30%;
 .video_text { font-size: 43px; }
 .controller_text { font-size: 46px; }
 .banner_text { padding-top: 0px; }
-#my_slider a.carousel-control-next { display: none; }
-#my_slider a.carousel-control-prev { display: none; }
-.banner_section { padding-bottom: 90px; }
+
+.banner_section { padding-bottom: 250px; }
 .about_section { padding-top: 0px; }
 .about_text{ font-size: 37px; margin-top: 50px;}
 .image_3 {margin-top: 50px;}
@@ -454,6 +453,7 @@ font-size: 14px;}
     margin-top: 30px;
     padding-bottom: 30px;
     width: 55%;}
+
 
 #main_slider a.carousel-control-prev {
     position: absolute;

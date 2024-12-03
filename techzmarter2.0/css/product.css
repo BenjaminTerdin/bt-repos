@@ -445,7 +445,7 @@ input[type="radio"] {
   width: 300%; /* Total width of all slides combined */
 }
 
-.slide {
+.slide-something {
   flex: 0 0 100%; /* Each slide takes up 100% width of the container */
   padding: 20px;
   text-align: center;

@@ -317,7 +317,6 @@ button {
 
 .button-1 {
     width: 35%;
-    float: left;
     font-size: 16px;
     text-align: center;
     background-color: #599EE9;
@@ -333,17 +332,13 @@ button {
     cursor: pointer;
 }
 
-#my_slider a.carousel-control-prev {
+#my_slider a.carousel-control-prev, 
+#my_slider a.carousel-control-next {
     position: absolute;
-    left: 20px;
-    top: 100%;
-    background-color: #599ee9;
+    top: 650px; /* Position vertically centered */
+    transform: translateY(-50%); /* Adjust for exact center alignment */
     width: 55px;
     height: 55px;
-}
-#my_slider .carousel-control-prev, #my_slider .carousel-control-next {
-    width: 65px;
-    height: 65px;
     background: #599ee9;
     opacity: 1;
     font-size: 30px;
@@ -351,17 +346,19 @@ button {
     border-radius: 100px;
 }
 
-#my_slider .carousel-control-prev:hover, #my_slider .carousel-control-next:hover{
+#my_slider a.carousel-control-prev {
+    left: 43%; /* Adjust to fit within the desired position */
+}
+
+#my_slider a.carousel-control-next {
+    right: 43%; /* Adjust to fit within the desired position */
+}
+
+#my_slider .carousel-control-prev:hover, 
+#my_slider .carousel-control-next:hover {
     background: #599ee9;
     color: #fff;
     box-shadow: 5px 5px 30px #1e1f20;
-}
-#my_slider a.carousel-control-next {
-    position: absolute;
-    left: 115px;
-    top: 100%;
-    height: 55px;
-    width: 55px;
 }
 
 .about_section{
@@ -557,7 +554,6 @@ button {
     color: #ffffff;
     margin-left: 0px;
     margin-top: 0px;
-    margin-right: 20px;
 }
 
 .section_footer {
@@ -642,3 +638,10 @@ button {
 .padding_video_0{
     margin-top: 0px; 
 }
+
+.thank-you-message {
+    display: none;
+    color: green;
+    font-size: 1.2em;
+    margin-top: 10px;
+  }
