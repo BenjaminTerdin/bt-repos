@@ -135,7 +135,7 @@
           <a class="carousel-control-prev" href="#my_slider" role="button" data-slide="prev">
             <i class="fa fa-angle-left"></i>
           </a>
-          <a class="carousel-control-next" href="#my_slider" role="button" data-slide="next" id="scrolltoabout">
+          <a class="carousel-control-next" href="#my_slider" role="button" data-slide="next">
             <i class="fa fa-angle-right"></i>
           </a>
 
@@ -145,7 +145,15 @@
   </div>
   <!-- banner section end -->
   <!-- about section start -->
-  <div class="about_section layout_padding">
+
+  <style>
+    /* Add a scroll-margin-top to create an offset */
+    #scrolltoabout {
+        scroll-margin-top: 150px; /* Adjust the value as needed */
+    }
+    </style>
+
+  <div class="about_section layout_padding" id="scrolltoabout">
     <div class="container">
       <div class="row">
         <div class="col-md-6" id="aboutimg">
