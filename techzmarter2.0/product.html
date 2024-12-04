@@ -57,12 +57,31 @@
 
   <!-- product section start -->
   <div class="product_section layout_padding" style="margin-top: 50px;">
-    <div class="product_text">Recommended <span style="color: #5ca0e9;">products</span></div>
  
+     <!-- Sorting Menu -->
+<!-- Sorting Menu -->
+<div class="category-menu">
+  <input type="radio" id="all" name="category" checked>
+  <label class="sorting-list" for="all">All Products</label>
+
+  <input type="radio" id="smart-home" name="category">
+  <label class="sorting-list" for="smart-home">Smart Home</label>
+
+  <input type="radio" id="tech-gadgets" name="category">
+  <label class="sorting-list" for="tech-gadgets">Tech Gadgets</label>
+
+  <input type="radio" id="audio" name="category">
+  <label class="sorting-list" for="audio">Audio</label>
+
+  <input type="radio" id="power" name="category">
+  <label class="sorting-list" for="power">Power Solutions</label>
+</div>
+
+
     <div class="container-list">
       <div class="product-grid">
         <!-- Product Card 1 -->
-        <div class="product-card">
+        <div data-category="tech-gadgets" class="product-card">
           <a href="product1.html" class="product-image">
             <img src="images/OculusQuest2.png">
           </a>
@@ -83,7 +102,7 @@
           </div>
         </div>
   
-        <div class="product-card">
+        <div data-category="audio" class="product-card">
           <a href="product2.html" class="product-image">
             <img src="images/jblheadphones.png">
           </a>
@@ -104,7 +123,7 @@
           </div>
         </div>
   
-        <div class="product-card">
+        <div data-category="smart-home" class="product-card">
           <a href="product3.html" class="product-image">
             <img src="images/tplinkcam.png">
           </a>
@@ -125,7 +144,7 @@
           </div>
         </div>
 
-        <div class="product-card">
+        <div data-category="power" class="product-card">
           <a href="product4.html" class="product-image">
             <img src="images/powerbank.png">
           </a>
@@ -149,6 +168,26 @@
       </div>
     </div>
   </div>
+
+  <script>
+    // JavaScript for filtering products
+    const allProducts = document.querySelectorAll('.product-card');
+    const categoryRadios = document.querySelectorAll('input[type="radio"]');
+
+    categoryRadios.forEach(radio => {
+      radio.addEventListener('change', function() {
+        const selectedCategory = this.id;
+
+        allProducts.forEach(product => {
+          if (selectedCategory === 'all') {
+            product.style.display = 'block';
+          } else {
+            product.style.display = product.getAttribute('data-category') === selectedCategory ? 'block' : 'none';
+          }
+        });
+      });
+    });
+  </script>
 
   <!-- product section end -->
   <!-- footer section start -->

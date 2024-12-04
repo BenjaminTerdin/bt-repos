@@ -216,8 +216,6 @@
 
 
 @media (min-width: 992px) and (max-width: 1199px) {
-    
-    .logo{font-size: 20px;}
     .titlepage h2::after {width: 58%;}
     .about-box .titlepage h2::after {
         width: 52%;
@@ -255,7 +253,6 @@ width: 30%;
 .navbar-expand-lg .navbar-nav .nav-link {
     padding-right: 5px;
     padding-left: 10px;
-    font-size: 14px;
 }
 
 

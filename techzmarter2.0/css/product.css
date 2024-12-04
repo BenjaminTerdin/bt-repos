@@ -292,6 +292,59 @@ img {
   .add-to-cart:hover {
     background-color: #2a2a28;
   }
+
+/* Sorting Menu */
+.category-menu {
+  display: flex;
+  justify-content: center; /* Center the items horizontally */
+  align-items: center; /* Vertically center the items */
+  margin-bottom: 30px;
+  flex-wrap: wrap; /* Allow items to wrap to the next line when necessary */
+}
+
+.category-menu input[type="radio"] {
+  display: none; /* Hide the radio buttons themselves */
+}
+
+.category-menu label {
+  background-color: #ddd;
+  padding: 10px 20px;
+  margin: 0 10px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  border-radius: 4px; /* Optional: adds rounded corners to the labels */
+  margin-bottom: 30px;
+}
+
+.category-menu label:hover {
+  background-color: #bbb;
+}
+
+.category-menu input[type="radio"]:checked + label {
+  background-color: #599ee9;
+  color: #fff;
+}
+
+/* Media Query for Screens <= 767px */
+@media (max-width: 767px) {
+  .category-menu {
+    flex-wrap: wrap; /* Allow wrapping of items when the screen is smaller */
+  }
+
+  /* Move Audio and Power Solutions buttons under the other sorting options */
+  .category-menu .audio,
+  .category-menu .power-solutions {
+    order: 1; /* Place these buttons under the other sorting options */
+    width: 100%; /* Make them take the full width of the container */
+    margin-top: 10px; /* Add some space between the buttons */
+  }
+
+  .category-menu label {
+    margin: 10px; /* Adjust spacing between labels */
+  }
+}
+
   
 
 
