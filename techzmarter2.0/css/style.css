@@ -34,6 +34,8 @@ src: url("../fonts/Lato-Regular.ttf");
 * {
      box-sizing: border-box !important;
      transition: ease all 0.5s;
+     margin: 0;
+     padding: 0;
 }
 
 html {
@@ -430,6 +432,10 @@ button {
 }
 
 #send-button {float: left; margin-left: 15px; }
+
+.product-grid{
+    width: 100%;
+}
 
 .product_section{
     width: 100%;
