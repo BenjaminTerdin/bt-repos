@@ -1,0 +1,860 @@
+:root{
+    --text-color: #ededed;
+    --link-color: #4a75ee;
+    --background-color: #242424;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--background-color);
+}
+
+a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+/* NAVBAR */
+
+
+nav {
+    position: sticky;
+    top: 0;
+    border-bottom: 1px solid #ededed;
+    background-color: #242424;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    height: 80px;
+}
+
+nav .left a {
+    color: var(--text-color);
+    font-size: 30px;
+    font-weight: 600;
+}
+
+nav .right a,b {
+    color: var(--text-color);
+    margin: 0 15px;
+    font-size: 22px;
+    font-weight: 400;
+}
+
+nav .right b:hover {
+    cursor: pointer;
+}
+
+nav .right a:last-child {
+    color: var(--background-color);
+    background-color: var(--text-color);
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+
+nav .right a span {
+    margin-left: 5px;
+}
+
+/* SECTION 1: Info */
+.info-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px;
+    margin-right: 100px;
+    transition: 0.1s;
+}
+
+.info-section .text {
+    flex: 5;
+    margin-top: 200px;
+    margin-left: 200px;
+    transition: 0.1s;
+}
+
+.info-section .text h2 {
+    font-size: 35px;
+    color: #ededed;
+}
+
+.info-section .text p {
+    font-size: 25px;
+    color: #ededed;
+    width: 530px;
+}
+
+.info-section .text .links{
+    margin-top: 25px;    
+    font-size: 20px;
+}
+
+.info-section .text .links span {
+    margin: 10px;
+}
+
+.info-section .text .links a {
+    display: inline-block;
+    padding: 5px 10px;
+    border: 2px solid var(--link-color);
+    border-radius: 5px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    transition: 0.1s;
+}
+.info-section .text .links a:hover{
+    color: var(--text-color);
+    border: 2px solid var(--text-color);
+}
+
+.info-section .picture {
+    flex: 2;
+    height: 892px;
+}
+
+/* SECTION 2: About */
+.about-section {
+    padding: 50px 340px;
+    margin-bottom: 0px;
+    transition: 0.1s;
+}
+.about-section .textbox {
+    background-color: #404040;
+    padding: 50px;
+}
+.about-section h2 {
+    margin-left: 125px;
+    color: #ededed;
+    font-size: 35px;
+}
+.about-section .atext1, .atext2, .atext3, .atext4 {
+    color: #ededed;
+    font-size: 20px;
+    width: 1000px;
+    padding: 10px;
+    margin-left: 140px;
+}
+
+/*SECTION 3: Konsulten */
+.consult-section {
+    padding: 50px 250px;
+    background-color: #adadad;
+}
+.consult-section h2 {
+    color: black;
+    font-size: 35px;
+    margin-bottom: 25px;
+}
+.consult-section .textbox .ktext1, .ktext2, .ktext3 {
+    color: black;
+    font-size: 20px;
+    margin-left: 50px;
+    margin-bottom: 30px;
+}
+
+.consult-section .textbox .kh1, .kh2, .kh3 {
+    color: black;
+    font-size: 30px;
+    margin-left: 70px;
+}
+
+/*SECTION 4: Erfarenhet */
+.eh {
+    color: #ededed;
+    font-size: 35px;
+    margin-top: 50px;
+    margin-left: 250px;
+    margin-bottom: 25px;
+    
+}
+.experience-section1 {
+    padding: 0 250px;
+    display: flex;
+}
+.experience-section1 .klingel {
+    min-width: 710px;
+    max-width: 710px;
+    height: 350px;
+    border: 2px solid #242424;
+}
+.experience-section1 .textboxup {
+    background-color: #554848;
+    padding: 10px 20px;
+    min-width: 710px;
+    max-width: 710px;
+    height: 350px;
+    color: #ededed;
+    border: 2px solid #242424;
+    margin-left: 50px;
+}
+.experience-section2 {
+    padding: 0px 250px;
+    display: flex;
+}
+.experience-section2 .ehandel {
+    min-width: 710px;
+    max-width: 710px;
+    height: 350px;
+    border: 2px solid #242424;
+    margin-left: 50px;
+}
+.experience-section2 .textboxdown {
+    background-color: #554848;
+    padding: 10px 20px;
+    min-width: 710px;
+    max-width: 710px;
+    height: 350px;
+    color: #ededed;
+    border: 2px solid #242424;
+    margin-bottom: 100px;
+}
+
+/*SECTION 5: Kontakt */
+.contact-section {
+    padding: 25px;
+    background-color: #adadad;
+}
+.contact-section .advice1, .advice2 {
+    font-size: 20px;
+    color: black;
+    width: 800px;
+    padding: 10px;
+    padding-bottom: 30px;
+    margin-left: 550px;
+}
+
+/* Under Contact*/
+.below-contact{
+margin-bottom: 50px;
+}
+
+.below-contact h2 {
+    color: #ededed;
+    margin: 25px;
+    margin-left: 750px;
+}
+.below-contact .link-mail, .link-phone, .link-linkedin {
+    color: var(--link-color);
+    padding: 10px;
+    margin-left: 800px;
+    font-size: 20px;
+}
+
+
+
+/*FOOTER*/
+footer {
+    padding: 50px;
+    padding-left: 200px;
+    margin-top: 25px;
+    background-color: black;
+    color: #ededed;
+}
+
+footer hr {
+    margin-top: 25px;
+    max-width: 1550px;
+    min-width: 200px;
+    margin-right: 50px;
+}
+
+
+
+
+/*MEDIA---MEDIA---MEDIA---MEDIA*/
+
+ /*------------SECTION 1: Info----------------*/
+@media (max-width: 1650px) {
+    .info-section .text {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 1250px) {
+    .info-section .picture img {
+        margin-top: 50px;
+        width: 400px;
+        border-radius: 100%;
+        
+    }
+}
+
+@media (max-width: 950px) {
+    .info-section{
+        flex-direction: column;
+    }
+    .info-section .text {
+        margin-top: 25px;
+    }
+    .info-section .picture img {
+        height: 480px;
+        width: auto;
+        border-radius: 0;
+    }
+}
+@media (max-width: 600px) {
+    .info-section {
+        margin: 0;
+    }
+    .info-section .text h2 {
+        font-size: 25px;
+        color: #ededed;
+    }
+    .info-section .text p {
+        font-size: 15px;
+        color: #ededed;
+        width: 320px;
+    }
+    .info-section .text .links {
+        font-size: 15px;
+    }
+    .info-section .picture img {
+        border-radius: 125px;
+    }
+
+}
+
+ /*------------SECTION 2: About----------------*/
+ @media (max-width: 1900px) {
+    .about-section .textbox .atext1, .atext2, .atext3, .atext4 {
+        width: 900px;
+    }
+ }
+ @media (max-width: 1800px) {
+    .about-section .textbox .atext1, .atext2, .atext3, .atext4 {
+        width: 800px;
+    }
+ }
+ @media (max-width: 1700px) {
+    .about-section .textbox .atext1, .atext2, .atext3, .atext4 {
+        width: 700px;
+    }
+ }
+ @media (max-width: 1600px) {
+    .about-section .textbox .atext1, .atext2, .atext3, .atext4 {
+        width: 600px;
+    }
+ }
+ @media (max-width: 1500px) {
+    .about-section .textbox .atext1, .atext2, .atext3, .atext4 {
+        width: 500px;
+    }
+    .about-section {
+        padding: 50px 290px;
+    }
+ }
+ @media (max-width: 1400px) {
+    .about-section {
+        padding: 50px 240px;
+    }
+ }
+ @media (max-width: 1300px) {
+    .about-section {
+        padding: 50px 190px;
+    }
+ }
+ @media (max-width: 1200px) {
+    .about-section {
+        padding: 50px 140px;
+    }
+ }
+ @media (max-width: 1100px) {
+    .about-section {
+        padding: 50px 90px;
+    }
+ }
+ @media (max-width: 950px) {
+    .about-section {
+        padding: 0;
+    }
+ }
+ @media (max-width: 800px) {
+    .about-section .textbox h2 {
+        margin-left: 50px;
+    }
+    .about-section .textbox .atext1, .atext2, .atext3, .atext4 {
+        margin-left: 60px;
+    }
+ }
+ @media (max-width: 700px) {
+    .about-section .textbox h2 {
+        margin-left: 0;
+    }
+    .about-section .textbox .atext1, .atext2, .atext3, .atext4 {
+        margin-left: 0;
+    }
+ }
+ @media (max-width: 600px) {
+    .about-section .textbox h2 {
+        font-size: 25px;
+        color: #ededed;
+    }
+    .about-section .textbox .atext1, .atext2, .atext3, .atext4 {
+        font-size: 15px;
+        color: #ededed;
+        width: 320px;
+    }
+ }
+
+/*------------------SECTION:3 Consult----------------------*/
+@media (max-width: 1650px) {
+    .consult-section {
+        padding: 25px 50px;
+        margin-left: 0;
+    }
+}
+@media (max-width: 700px) {
+    .consult-section .textbox .ktext1, .ktext2, .ktext3 {
+      margin-left: 0px;
+    }
+    
+    .consult-section .textbox .kh1, .kh2, .kh3 {
+     margin-left: 20px;
+    }
+}
+@media (max-width: 600px) {
+    .consult-section .textbox .ktext1, .ktext2, .ktext3 {
+        color: black;
+        font-size: 15px;
+    }
+    
+    .consult-section .textbox .kh1, .kh2, .kh3 {
+        color: black;
+        font-size: 20px;
+    }
+    .consult-section h2 {
+        font-size: 25px;
+    }
+}
+
+
+ /*------------SECTION 4: Erfarenhet----------------*/
+ @media (max-width: 1650px) {
+    .eh {
+        padding-left: 50px;
+        margin-left: 0;
+    }
+    .experience-section1, .experience-section2 {
+        padding-left:100px ;
+    }
+}
+
+    @media (max-width: 1550px) { 
+    .experience-section2 .ehandel, .experience-section1 .klingel{
+        min-width: 650px;
+        max-width: 650px;
+        height: 350px;
+      }
+    .experience-section1 .textboxup, .experience-section2 .textboxdown{
+        min-width: 650px;
+        max-width: 650px;
+        height: 350px;
+    }
+}
+
+@media (max-width: 1450px) { 
+    .experience-section1 {
+        flex-direction:column-reverse;
+    }
+     .experience-section2 {
+        flex-direction:column;
+    }
+    .experience-section2 .ehandel, .experience-section1 .klingel{
+        min-width: 1000px;
+        max-width: 1000px;
+        height: 550px;
+        margin-left: 0;
+      }
+    .experience-section1 .textboxup, .experience-section2 .textboxdown{
+        min-width: 1000px;
+        max-width: 1000px;
+        height: fit-content;
+            padding-bottom: 30px;
+        margin-left: 0;
+    }
+}
+@media (max-width: 1250px) { 
+    .experience-section2 .ehandel, .experience-section1 .klingel{
+        min-width: 900px;
+        max-width: 900px;
+        height: 450px;
+        margin-left: 0;
+      }
+    .experience-section1 .textboxup, .experience-section2 .textboxdown{
+        min-width: 900px;
+        max-width: 900px;
+        height: fit-content;
+            padding-bottom: 30px;
+        margin-left: 0;
+    }
+}
+@media (max-width: 1150px) { 
+    .experience-section2 .ehandel, .experience-section1 .klingel{
+        min-width: 800px;
+        max-width: 800px;
+        height: 400px;
+        margin-left: 0;
+      }
+    .experience-section1 .textboxup, .experience-section2 .textboxdown{
+        min-width: 800px;
+        max-width: 800px;
+        height: fit-content;
+            padding-bottom: 30px;
+        margin-left: 0;
+    }
+}
+    @media (max-width: 1000px) { 
+    .experience-section2 .ehandel, .experience-section1 .klingel{
+        min-width: 700px;
+        max-width: 700px;
+        height: 350px;
+        margin-left: 0;
+      }
+      .experience-section2 .textboxdown {
+        margin-bottom: 25px;
+      }
+    .experience-section1 .textboxup, .experience-section2 .textboxdown{
+        min-width: 700px;
+        max-width: 700px;
+        height: fit-content;
+            padding-bottom: 30px;
+        margin-left: 0;
+    }
+    }
+    @media (max-width: 900px) { 
+    .experience-section2 .ehandel, .experience-section1 .klingel {
+            min-width: 650px;
+            max-width: 650px;
+            height: 350px;
+}
+    .experience-section1 .textboxup, .experience-section2 .textboxdown{
+            min-width: 650px;
+            max-width: 650px;
+            height: fit-content;
+            padding-bottom: 30px;
+        }
+
+}
+@media (max-width: 800px) { 
+    .experience-section2 .ehandel, .experience-section1 .klingel {
+            min-width: 550px;
+            max-width: 550px;
+            height: 300px;
+}
+    .experience-section1 .textboxup, .experience-section2 .textboxdown{
+            min-width: 550px;
+            max-width: 550px;
+            height: fit-content;
+            padding-bottom: 30px;
+            }
+        }
+@media (max-width: 800px) { 
+    .experience-section2 .ehandel, .experience-section1 .klingel {
+            min-width: 550px;
+            max-width: 550px;
+            height: 300px;
+}
+    .experience-section1 .textboxup, .experience-section2 .textboxdown{
+            min-width: 550px;
+            max-width: 550px;
+            height: fit-content;
+            padding-bottom: 30px;
+            }
+        }
+@media (max-width: 700px) { 
+    .experience-section2 .ehandel, .experience-section1 .klingel {
+            min-width: 450px;
+            max-width: 450px;
+            height: 250px;
+}
+    .experience-section1 .textboxup, .experience-section2 .textboxdown{
+            min-width: 450px;
+            max-width: 450px;
+            height: fit-content;
+            padding-bottom: 30px;
+      }
+    }
+@media (max-width: 600px) { 
+    .experience-section1, .experience-section2 {
+        padding-left: 75px;
+    }
+    .eh {
+        font-size: 25px;
+    }
+}
+@media (max-width: 550px) { 
+    .experience-section1, .experience-section2 {
+        padding-left: 35px;
+    }
+}
+@media (max-width: 500px) {
+    .experience-section1, .experience-section2 {
+        padding-left: 15px;
+    }
+    .experience-section2 .textboxdown{
+        margin-bottom: 15px;
+    }
+}
+@media (max-width: 450px) {
+    .experience-section1, .experience-section2 {
+        padding-left: 0px;
+}
+.experience-section2 .textboxdown {
+    margin-bottom: 1px;
+}
+}
+
+/*------------SECTION 5: Kontact----------------*/
+@media (max-width: 1800px) {
+.contact-section .advice1, .advice2 {
+        margin-left: 500px;
+    }
+}
+
+@media (max-width: 1700px) {
+.contact-section .advice1, .advice2 {
+        margin-left: 450px;
+    }
+}
+
+@media (max-width: 1600px) {
+.contact-section .advice1, .advice2 {
+        margin-left: 400px;
+    }
+}
+
+@media (max-width: 1500px) {
+.contact-section .advice1, .advice2 {
+        margin-left: 350px;
+    }
+}
+
+@media (max-width: 1400px) {
+.contact-section .advice1, .advice2 {
+        margin-left: 300px;
+    }
+}
+
+@media (max-width: 1300px) {
+.contact-section .advice1, .advice2 {
+        margin-left: 250px;
+    }
+}
+
+@media (max-width: 1200px) {
+.contact-section .advice1, .advice2 {
+        margin-left: 200px;
+    }
+}
+
+@media (max-width: 1100px) {
+.contact-section .advice1, .advice2 {
+        margin-left: 150px;
+    }
+}
+
+@media (max-width: 1000px) {
+.contact-section .advice1, .advice2 {
+        margin-left: 100px;
+    }
+}
+
+@media (max-width: 950px) {
+.contact-section .advice1, .advice2 {
+        margin-left: 50px;
+    }
+}
+
+@media (max-width: 900px) {
+.contact-section .advice1, .advice2 {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 850px) {
+    .contact-section .advice1, .advice2 {
+            width: 700px;
+        }
+    }
+
+@media (max-width: 750px) {
+    .contact-section .advice1, .advice2 {
+            width: 600px;
+        }
+    }
+
+@media (max-width: 650px) {
+    .contact-section .advice1, .advice2 {
+            width: 500px;
+        }
+    }
+
+@media (max-width: 550px) {
+    .contact-section .advice1, .advice2 {
+            width: 400px;
+        }
+    }
+
+@media (max-width: 600px) {
+    .contact-section .advice1, .advice2 {
+        font-size: 20px;
+        color: black;
+    }
+}
+
+/*-----------------UNDER CONTACT---------------*/
+@media (max-width: 1700px) {
+    .below-contact .link-mail, .link-phone, .link-linkedin {
+        margin-left: 700px;
+    }
+    .below-contact h2 {
+        margin-left: 650px;
+    }
+}
+
+@media (max-width: 1500px) {
+    .below-contact .link-mail, .link-phone, .link-linkedin {
+        margin-left: 600px;
+    }
+    .below-contact h2 {
+        margin-left: 550px;
+    }
+}
+
+@media (max-width: 1300px) {
+    .below-contact .link-mail, .link-phone, .link-linkedin {
+        margin-left: 500px;
+    }
+    .below-contact h2 {
+        margin-left: 450px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .below-contact .link-mail, .link-phone, .link-linkedin {
+        margin-left: 400px;
+    }
+    .below-contact h2 {
+        margin-left: 350px;
+    }
+}
+
+@media (max-width: 900px) {
+    .below-contact .link-mail, .link-phone, .link-linkedin {
+        margin-left: 300px;
+    }
+    .below-contact h2 {
+        margin-left: 250px;
+    }
+}
+
+@media (max-width: 700px) {
+    .below-contact .link-mail, .link-phone, .link-linkedin {
+        margin-left: 200px;
+    }
+    .below-contact h2 {
+        margin-left: 150px;
+    }
+}
+
+@media (max-width: 600px) {
+    .below-contact .link-mail, .link-phone, .link-linkedin {
+        margin-left: 140px;
+    }
+    .below-contact h2 {
+        margin-left: 100px;
+    }
+}
+
+@media (max-width: 550px) {
+    .below-contact .link-mail, .link-phone, .link-linkedin {
+        margin-left: 90px;
+    }
+    .below-contact h2 {
+        margin-left: 50px;
+    }
+}
+
+@media (max-width: 500px) {
+    .below-contact .link-mail, .link-phone, .link-linkedin {
+        margin-left: 70px;
+    }
+    .below-contact h2 {
+        margin-left: 40px;
+    }
+}
+
+
+/*-------------------FOOTER---------------------*/
+@media (max-width: 1600px) {
+    footer {
+        padding-left: 150px;
+    }
+@media (max-width: 1400px) {
+    footer {
+        padding-left: 125px;
+    }
+}
+@media (max-width: 1200px) {
+    footer {
+        padding-left: 100px;
+    }
+}
+@media (max-width: 1000px) {
+    footer {
+        padding-left: 75px;
+    }
+}
+@media (max-width: 800px) {
+    footer {
+        padding-left: 50px;
+    }
+}
+}
+
+
+
+
+
+
+/*---------------------NAVBAR----------------------*/
+
+@media (max-width: 1250px) {
+    nav {
+        padding: 0 20px;
+    }
+    nav .right a span {
+        display: none;
+    }
+}
+
+nav .right a {
+    font-size: 22px;
+}
+
+/*NAVBAR Smaller*/
+@media (max-width: 750px) {
+    nav .right .navabout {
+        font-size: 0;
+}
+    nav .right .navconsult {
+        font-size: 0;
+}
+    nav .right .navexperience {
+        font-size: 0;
+}
+    nav .right a:last-child {
+        color: var(--text-color);
+        background-color: var(--background-color);
+    }
+}
