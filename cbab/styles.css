@@ -1,6 +1,6 @@
 :root{
     --text-color: #ededed;
-    --link-color: #4a75ee;
+    --link-color: #6a89dd;
     --background-color: #242424;
 }
 
@@ -16,7 +16,12 @@ html {
 
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: var(--background-color);
+    background-image:url("images/carinaimg.png");
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    margin: 0;
+    height: 100vh; 
 }
 
 a {
@@ -24,32 +29,45 @@ a {
     text-decoration: none;
 }
 
-/* NAVBAR */
+/* NAVBAR */    /* NAVBAR */    /* NAVBAR */    /* NAVBAR */    /* NAVBAR */    /* NAVBAR */    /* NAVBAR */    /* NAVBAR */    /* NAVBAR */
 
 
 nav {
     position: sticky;
     top: 0;
-    border-bottom: 1px solid #ededed;
-    background-color: #242424;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 50px;
+    padding: 0 12%;
     height: 80px;
+    transition: background-color 0.4s ease-in-out;
 }
+nav.scrolled {
+    background-color: #242424;
+    opacity: 1;
+}
+
 
 nav .left a {
     color: var(--text-color);
     font-size: 24px;
     font-weight: 600;
+    transition: color 0.4s ease-in-out;
+}
+nav.scrolled .left a {
+    color: white;
 }
 
-nav .right a,b {
+
+nav .right a {
     color: var(--text-color);
     margin: 0 15px;
     font-size: 18px;
     font-weight: 400;
+    transition: color 0.4s ease-in-out;
+}
+nav.scrolled .right a {
+    color: white;
 }
 
 nav .right b:hover {
@@ -67,36 +85,39 @@ nav .right a span {
     margin-left: 5px;
 }
 
-/* SECTION 1: Info */
+
+
+/* SECTION 1: Info */   /* SECTION 1: Info */   /* SECTION 1: Info */   /* SECTION 1: Info */   /* SECTION 1: Info */   /* SECTION 1: Info */   /* SECTION 1: Info */
+
 .info-section {
     display: flex;
     justify-content: space-between;
     padding: 0 50px;
-    margin-right: 100px;
     transition: 0.1s;
+    height: 95vh;
 }
 
 .info-section .text {
     flex: 5;
     margin-top: 200px;
-    margin-left: 200px;
+    margin-left: 12%;
     transition: 0.1s;
 }
 
 .info-section .text h2 {
-    font-size: 35px;
+    font-size: 24px;
     color: #ededed;
 }
 
 .info-section .text p {
-    font-size: 25px;
+    font-size: 20px;
     color: #ededed;
-    width: 530px;
+    width: 400px;
 }
 
 .info-section .text .links{
     margin-top: 25px;    
-    font-size: 20px;
+    font-size: 16px;
 }
 
 .info-section .text .links span {
@@ -115,11 +136,6 @@ nav .right a span {
 .info-section .text .links a:hover{
     color: var(--text-color);
     border: 2px solid var(--text-color);
-}
-
-.info-section .picture {
-    flex: 2;
-    height: 892px;
 }
 
 /* SECTION 2: About */
@@ -284,7 +300,33 @@ footer hr {
     }
 }
 
-/*NAVBAR Smaller*/
+@media (max-width: 1150px) {
+    .info-section .text {
+        margin-left: 5%;
+    }
+    .info-section .text p {
+        width: 300px;
+    }
+}
+
+@media (max-width: 800px) {
+    .info-section .text {
+        margin-top: 50px;
+    }
+    .info-section .links {
+        display: none;
+    }
+    .info-section .text p {
+        font-size: 18px;
+        width: 250px;
+    }
+    .info-section .text h2 {
+        font-size: 20px;
+    }
+    
+}
+
+
 @media (max-width: 750px) {
     nav .right .navabout {
         font-size: 0;

@@ -59,73 +59,11 @@
                 </a>
             </div>
         </div>
-
-        <div class="picture">
-            <img src="carina front.png" alt="carina-bild">
-        </div>
     </section>
 
 
-    <!-- SECTION 2: Om -->
-    <section id="about" class="about-section" style="background-color: #767676;">
-    <div class="textbox">
-        <h2>Lite om Carina</h2>
-<div class="atext1">
-- Erfaren strateg som arbetat i många år med distanshandel, numera E-Handel. Van vid att framgångsrikt förhandla fram avtal med externa partners för att kostnadseffektivt och med kunden i fokus driva och utveckla verksamheten framåt. 
-</div>
-<div class="atext2">
-    - Kunnig, rutinerad och diplomatisk ledare med god självinsikt och ett stort nätverk.
-</div>
-<div class="atext3">
-    - Snabbtänkt, logisk, noggrann och engagerad med stark drivkraft och mycket energi. Ser lösningar i stället för problem och alltid med kunden i fokus.
-</div>
-<div class="atext4">   - Flexibel och kreativ som trivs i utvecklande miljöer, gärna internationella sådana. Talar och skriver flytande på svenska, tyska och engelska.
-</div>
-
-</div>
-    </section>
-
-
-    <!-- SECTION 3: Konsulten -->
-    <section id="consult" class="consult-section">
-        <h2>Konsulten</h2>
-        <div class="textbox">
-
-            <h3 class="kh1">Affärsutveckling</h3>
-            <p class="ktext1">Efter nästan 20 år som COO på ett tyskt E-handelsbolag i Norden, har Carina en unik kompetens inom detta område.Carina byggde upp den operativa, lokala verksamheten i Sverige, Norge och Finland från grunden. Vi pratar om kundservice, logistiklösningar, översättningsprocesser och inte minst lokal marknadsföring inklusive PR och sociala medier. Hon etablerade även lokala kontor med personal i respektive land.</p></div>
-            
-            <h3 class="kh2">Strategi</h3>
-            <p class="ktext2">Carina är en gammal “Postorderräv” med rötterna hos Älvsereds Postorder och Ellos. Hon har varit med i branschen i totalt 40 år och sett den utvecklas från ren postorder till distanshandel och numera E-handel. Hon har en utpräglad fallenhet för att utarbeta strategier och arbeta långsiktigt mot framtida mål. Med sunt förnuft och fingertoppskänsla för vad just din kund behöver guidar och leder hon dig och din verksamhet mot effektivitet och lönsamhet.</p></div>
-            
-            <h3 class="kh3">Resultat</h3>
-            <p class="ktext3">Carina har ett nätverk som sträcker sig över alla områden du som e-handlare behöver när det kommer till att etablera din verksamhet. Hon har en utpräglad fallenhet för att utarbeta strategier. Hon jobbar långsiktigt mot framtida mål och har lätt för att ta fram handlingsplaner och utvärdera resultat. Carina är rationell och verklighetsförankrad och på samma gång strukturerad och pragmatisk. Problemlösning är en av hennes starkaste sidor.</p></div>
-        </div>
-    </section>
-
-
-    <!-- SECTION 4: Erfarenhet -->
-    <h2 class="eh">Erfarenhet</h2>
-    <div class="allexp">
-    <section id="experience" class="experience-section1">
-            <div class="textboxup">
-                <h3 class="ehup">Klingel Sverige - COO / Affärsutvecklare Klingel Nordics</h3>
-                <p class="etextup">Som COO för Klingel Sverige har jag byggt upp och hanterat den operativa  verksamheten i Sverige, Norge och Finland. Det inkluderar att etablera  lokala processer för logistik och tullhantering, samt att internflytta  översättningsprocessen för att förbättra kvalitet och minska kostnader.  Jag har haft personalansvar för cirka 45 personer, ansvarat för  kostnadsbudgeten och varit medlem i ledningsgruppen för Klingels  utländska verksamhet. Dessutom har jag drivit lokal marknadsföring och  varit ledande inom PR och sociala medier för varumärkesbyggande i  Norden, vilket har lett till framgångsrika resultat och nöjda kunder.</p>
-                <h4 class="dateup">2003/03 - 2022/06</h4>
-            </div>
-            <img src="klingel.png" class="klingel">
-    </section>
-    <section id="experience2" class=experience-section2>
-        <img src="ehandel.png" class="ehandel">
-        <div class="textboxdown">
-            <h3 class="ehdown">E-handel</h3>
-            <p class="etextdown1">Ansvarig inköps- och försäljningschef för dam- och barnkläder på Älvsereds Postorder AB. Leverantörerlokaliserade i Fjärran Östern, Europa och Sverige. Personalansvar för 5personer. Koordinator för logistik (3rd Party) samt katalogproduktion.</p>
-            <h4 class="datedown1">1999 - 2003</h4>
-            <p class="etextdown2">Ansvarig inköps- och försäljningschef för barnkläder på Ellos AB.</p>
-            <h4 class="datedown2">1986 - 1991</h4>
-    </section>
-</div>
-
-    <!-- SECTION 5: Kontakt -->
+  
+    <!-- SECTION 2: Kontakt -->
     <section id="contact" class="contact-section">
         <div class="advice">
             <h3 class="advice1">Står du inför utmaningar där du behöver nya infallsvinklar? Kanske hjälp med att tänka utanför den berömda boxen? Jag hjälper dig att starta upp din verksamhet eller utveckla och optimera din befintliga. </h3>
@@ -161,7 +99,6 @@
         <div class="footer-contact">
             <h2>Kontakt</h2>
                 <p class="footer-name">Carina Bergudden</p>
-                <p class="footer-adress">Postadress: Carlbergsgatan 5D, 41266 Göteborg</p>
                 <p class="footer-mail">Mail: carina@bergudden.com</p>
                 <p class="footer-phone">Telefon: 0706-686086</p>
             </div>
@@ -170,4 +107,17 @@
 </main>
 
 </body>
+
+<script>
+    document.addEventListener('scroll',() => {
+        const nav = document.querySelector('nav');
+
+        if (window.scrollY > 0){
+            nav.classList.add('scrolled');
+        }else{
+            nav.classList.remove('scrolled');
+        }
+    })
+</script>
+
 </html>
