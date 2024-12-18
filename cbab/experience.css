@@ -1,0 +1,251 @@
+:root{
+    --text-color: #ededed;
+    --link-color: #6a89dd;
+    --background-color: #242424;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #242424;
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    margin: 0;
+    height: 1000px;
+}
+
+a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+/* NAVBAR */    /* NAVBAR */    /* NAVBAR */    /* NAVBAR */    /* NAVBAR */    /* NAVBAR */    /* NAVBAR */    /* NAVBAR */    /* NAVBAR */
+
+/* Disable navbar links temporary */
+nav .navabout,.navconsult {
+    display: none;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 12%;
+    height: 80px;
+    transition: background-color 0.4s ease-in-out;
+}
+
+
+nav .left a {
+    color: var(--text-color);
+    font-size: 24px;
+    font-weight: 600;
+}
+
+nav .right a {
+    color: var(--text-color);
+    padding: 5px 15px;
+    margin: 0 15px;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+nav .navlinks {
+    background-color: var(--background-color);
+}
+
+nav .right a span {
+    margin-left: 5px;
+}
+
+
+/*HOVER*/
+nav .right a:hover {
+    background-color: #444;
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+nav.scrolled .right a:hover {
+    color: var(--text-color);
+    background-color: var(--background-color);
+    padding: 5px 15px;
+    margin: 0 15px;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+
+/*SCROLLED*/
+nav.scrolled {
+    background-color: #333;
+}
+nav.scrolled .left a {
+    color: var(--text-color);
+}
+nav.scrolled .right a {
+    color: var(--text-color);
+}
+nav.scrolled .right a {
+    color: var(--text-color);
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+nav.scrolled .navlinks {
+    background-color: transparent;
+}
+
+/* Experience Section*/     /* Experience Section*/     /* Experience Section*/     /* Experience Section*/     /* Experience Section*/     /* Experience Section*/ 
+#experience-heading {
+    margin-left: 10%;
+    margin-top: 100px;
+}
+
+.experience-section {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap for smaller screens */
+    justify-content: center; /* Center content on smaller screens */
+    gap: 20px; /* Add spacing between items */
+}
+
+.experience-container {
+    display: flex;
+    flex-direction: column; /* Stack boxes vertically */
+    align-items: flex-start;
+    flex: 1; /* Allow it to grow/shrink based on available space */
+    max-width: 700px; /* Limit the width for better readability */
+    margin-right: auto; /* Push the container to the left */
+}
+
+.experience {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px; /* Add spacing between boxes */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Make boxes take full width of the container */
+}
+
+.job-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.job-duration {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 15px;
+}
+
+.job-tasks {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.job-tasks li {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+#rock {
+    height: auto; /* Maintain aspect ratio */
+    max-height: 750px; /* Limit the maximum height */
+    width: auto; /* Allow width to adjust proportionally */
+    max-width: 100%; /* Ensure it doesn't exceed the container's width */
+    object-fit: cover; /* Crop image proportionally if needed */
+    margin-left: auto; /* Keep the image aligned to the right */
+    margin-right: 0; /* Prevent extra spacing on the right */
+    display: block; /* Ensure it doesn't behave like an inline element */
+}
+
+
+
+/* Footer Section */
+footer {
+    background-color: #333;
+    color: #ededed;
+    padding: 20px 10px;
+}
+
+.footer-container {
+    padding: 0 10%;
+}
+
+footer h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+footer .link-mail, .link-phone, .link-linkedin {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+footer .link-mail i, .link-phone i, .link-linkedin i {
+    margin-right: 5px;
+}
+
+footer hr {
+    margin: 20px auto;
+    width: 80%;
+    border: 0.5px solid #444;
+}
+
+
+
+
+
+
+
+/*MEDIA---MEDIA---MEDIA---MEDIA*/
+
+/*---------------------NAVBAR----------------------*/
+
+
+@media (max-width: 1150px) {
+    nav {
+        padding: 0 8%;
+    }
+    nav .right a span {
+        display: none;
+    }
+}
+@media (max-width: 925px) {
+    #rock {
+        display: none;
+    }
+    .experience-contianer {
+        max-width: 1000px;
+    }
+}
+@media (max-width: 750px) {
+    nav .right .navabout {
+        display: none;
+}
+    nav .right .navconsult {
+        display: none;
+}
+    nav .right .navexperience {
+        display: none;
+}
+}

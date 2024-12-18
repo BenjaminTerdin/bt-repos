@@ -1,0 +1,136 @@
+<!DOCTYPE html public>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Behöver du kanske hjälp med att tänka utanför den berömda boxen? Jag hjälper dig att starta upp din verksamhet eller utveckla och optimera din befintliga.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+    <link rel="stylesheet" href="experience.css">
+
+    <title>CBAB</title>
+
+</head>
+
+<body>
+ <!-- NAVBAR -->
+ <nav>
+    <div class="left">
+        <a href="index.html">cbab</a>
+    </div>
+    <div class="right">
+
+        <a class="navabout" href="#about">Om Carina</a>
+        <a class="navconsult" href="#consult">Konsulten</a>
+        <a class="navexperience" href="experience.html">Erfarenhet</a>
+
+        <a class="navlinks" href="http://linkedin.com/in/carinabergudden/" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-linkedin"></i>
+            <span>LinkedIn</span>
+        </a>
+
+        <a class="navlinks" href="mailto:carina@bergudden.com">
+            <i class="fa-solid fa-envelope"></i>
+            <span>Email</span>
+        </a>    
+    </div>
+</nav>
+
+<main>
+    <!-- SECTION 1: Experience -->
+
+    <h2 id="experience-heading">Erfarenheter</h2>
+    <section class="experience-section">
+        <div class="experience-container">
+            <div class="experience">
+                <h3 class="job-title">Job Title 1</h3>
+                <p class="job-duration">From January 2020 to December 2022, at Company X</p>
+                <ul class="job-tasks">
+                    <li>Managed daily operations of the team</li>
+                    <li>Oversaw project budgets and timelines</li>
+                    <li>Developed new business strategies</li>
+                    <li>Collaborated with clients to tailor solutions</li>
+                </ul>
+            </div>
+            <div class="experience">
+                <h3 class="job-title">Job Title 2</h3>
+                <p class="job-duration">From March 2018 to November 2019, at Company Y</p>
+                <ul class="job-tasks">
+                    <li>Led a team of developers</li>
+                    <li>Implemented new software features</li>
+                    <li>Performed quality assurance and testing</li>
+                    <li>Trained junior developers</li>
+                </ul>
+            </div>
+            <div class="experience">
+                <h3 class="job-title">Job Title 3</h3>
+                <p class="job-duration">From June 2015 to February 2018, at Company Z</p>
+                <ul class="job-tasks">
+                    <li>Handled customer service and inquiries</li>
+                    <li>Processed orders and managed inventory</li>
+                    <li>Provided product recommendations to customers</li>
+                </ul>
+            </div>
+        </div>
+            <img src="images/carinarock.png" id="rock">
+    </section>
+    
+
+
+
+
+
+
+
+    <!-- FOOTER -->
+
+    <footer style="margin-top: 1000px;">
+        <div class="footer-contact">
+            <div class="footer-container">
+                <h2>Kontakt</h2>
+                <div class="link-mail">
+                    <a href="mailto:carina@bergudden.com">
+                        <i class="fa-regular fa-envelope"></i>
+                        <span>carina@bergudden.com</span>
+                    </a>
+                </div>
+                <div class="link-phone">
+                    <a href="tel:+46706686086">
+                        <i class="fa-solid fa-phone"></i>
+                        <span>0706-686086</span>
+                    </a>
+                </div>
+                <div class="link-linkedin">
+                    <a href="http://linkedin.com/in/carinabergudden/" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                        <span>carinabergudden</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <hr>
+    </footer>
+    
+</main>
+
+</body>
+
+<script>
+    document.addEventListener('scroll',() => {
+        const nav = document.querySelector('nav');
+
+        if (window.scrollY > 0){
+            nav.classList.add('scrolled');
+        }else{
+            nav.classList.remove('scrolled');
+        }
+    })
+</script>
+
+</html>
