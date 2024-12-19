@@ -38,7 +38,12 @@ nav .navabout,.navconsult {
     display: none;
 }
 
+.navexperience {
+    text-decoration: underline;
+}
+
 nav {
+    z-index: 10000000;
     position: fixed;
     width: 100%;
     top: 0;
@@ -170,7 +175,7 @@ nav.scrolled .navlinks {
 }
 
 
-/* Footer Section */
+/* Footer Section */    /* Footer Section */    /* Footer Section */    /* Footer Section */    /* Footer Section */    /* Footer Section */    /* Footer Section */    /* Footer Section */
 footer {
     background-color: #333;
     color: #ededed;
