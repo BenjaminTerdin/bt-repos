@@ -188,6 +188,11 @@ nav.scrolled .navlinks {
     line-height: 1.8;
 }
 
+#advice-center {
+    text-align: center;
+    margin: 40px 0;
+}
+
 #experience-center {
     margin-top: 40px;
     font-size: 18px;
@@ -273,10 +278,10 @@ footer hr {
 
 @media (max-width: 800px) {
     .info-section .text {
-        margin-top: 200px;
+        margin-top: 150px;
     }
-    .info-section .links {
-        display: none;
+    .info-section .links a {
+        font-size: 14px;
     }
     .info-section .text p {
         font-size: 18px;
@@ -305,5 +310,8 @@ footer hr {
 .contact-section .advicetext{
     font-size: 16px;
     margin-bottom: 10px;
+}
+#experience-center {
+    font-size: 16px;
 }
 }
