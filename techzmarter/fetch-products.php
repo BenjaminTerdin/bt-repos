@@ -5,9 +5,9 @@ use GuzzleHttp\Client;
 
 function fetchAmazonProducts($keyword) {
     // Amazon API credentials
-    $accessKey = 'AKIAIHNETX4BNDAG2BSQ';
-    $secretKey = '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';
-    $associateTag = '200fe9-21';
+    $accessKey = '';
+    $secretKey = '';
+    $associateTag = '';
     $endpoint = 'webservices.amazon.com';
     $uri = '/onca/xml';
 
