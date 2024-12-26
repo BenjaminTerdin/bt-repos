@@ -4,10 +4,11 @@ require 'vendor/autoload.php'; // Include Guzzle library
 use GuzzleHttp\Client;
 
 function fetchAmazonProducts($keyword) {
-    // Amazon API credentials
-    $accessKey = '';
-    $secretKey = '';
-    $associateTag = '';
+// Access the environment variables
+$amazonAccessKey = $_ENV['AMAZON_ACCESS_KEY'];
+$amazonSecretKey = $_ENV['AMAZON_SECRET_KEY'];
+$amazonAssociateTag = $_ENV['AMAZON_ASSOCIATE_TAG'];
+
     $endpoint = 'webservices.amazon.com';
     $uri = '/onca/xml';
 
