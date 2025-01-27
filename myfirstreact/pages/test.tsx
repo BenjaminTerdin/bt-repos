@@ -2,9 +2,9 @@ import React from 'react';
 
 const TestPage = () => {
     return (
-      <div>
-        <h1>Welcome to the Test Page!</h1>
-        <p>This is a simple test page to verify your Next.js setup.</p>
+      <div className="container">
+        <h1>Hello</h1>
+        <p>Hello</p>
       </div>
     );
   };
