@@ -108,25 +108,112 @@ body {
     padding: 10px;
 }
 
-.card {
-    background-color: dodgerblue;
-    color: white;
-    padding: 1rem;
-    height: 300px;
-  }
-
+/* Gallery container styling */
 .gallery {
-margin: 0 50px;
-display: grid;
-justify-content: center;
-align-items: center;
-gap: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
 }
-@media (min-width: 1000px) {
-    .gallery { grid-template-columns: repeat(3, 1fr); }
-  }
 
+/* Work section */
+.work {
+    text-align: center;
+    margin-bottom: 40px;
+    width: 100%;
+}
 
-@media (max-width: 900px){
+.work-text h1 {
+    color: var(--white);
+    margin-bottom: 10px;
+}
 
+.work-text p {
+    color: var(--gray);
+    line-height: 1.5;
+    margin-bottom: 18px;
+}
+
+/* Work icons section (if you want to add icons later) */
+.work-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+/* Cards section */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns by default */
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 30px;
+    padding: 0 20px;
+    justify-items: center; /* Centers cards in each grid cell */
+}
+
+/* Individual card styling */
+.card {
+    background-color: #1E90FF; /* Dodger blue */
+    color: white;
+    position: relative;
+    width: 100%; /* Make the card take full width of its grid cell */
+    padding-bottom: 56.25%; /* 16:9 aspect ratio (height = width * 9 / 16) */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.card:hover {
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+.card div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Responsive layout for medium screens */
+@media (max-width: 1000px) {
+    .cards {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns for medium screens */
+        gap: 20px;
+    }
+}
+
+/* Responsive layout for small screens */
+@media (max-width: 600px) {
+    .cards {
+        grid-template-columns: 1fr; /* 1 column for small screens */
+        gap: 15px;
+    }
+
+    .card {
+        width: 90%; /* Makes the card take more space on small screens */
+        height: auto; /* Adjust height to content */
+    }
+}
+
+/* Extra large screens (like 1920x1080 resolution screens) */
+@media (min-width: 1600px) {
+    .cards {
+        grid-template-columns: repeat(3, 1fr); /* Still 3 columns */
+        gap: 10px; /* Smaller gap for larger screens */
+    }
+
+    .card {
+        width: 320px; /* Slightly larger width for large screens */
+        padding-bottom: 180px; /* Taller cards for a better 16:9 ratio */
+    }
 }
