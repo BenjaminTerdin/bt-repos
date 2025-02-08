@@ -12,7 +12,7 @@ body {
     font-optical-sizing: auto;
     font-style: normal;
 
-    background-image: url(img/portfoliobg.png);
+    background-image: url(/portfolioV2/img/portfoliobg.png);
     background-position: center;  /* Centers the image in the container */
     background-repeat: no-repeat;
     background-size: cover;
@@ -20,70 +20,6 @@ body {
     height: 1700px ;
 
 }
-
-
-/* Main header container */
-.header {
-    display: flex;
-    justify-content: space-between; /* Space out logo, nav, and "Let's Talk" */
-    align-items: center;
-    width: 100%;
-    padding: 10px 0;
-}
-
-/* Logo container */
-.header-logo {
-    width: 200px; /* Take up 35% of the space */
-    display: flex;
-    justify-content: flex-end; /* Align the logo to the right */
-    align-items: center;
-}
-
-.header-logo h3 a {
-    text-decoration: none;
-    color: var(--yellow);
-    font-size: 20px;
-}
-
-/* Navigation list container */
-.header-list {
-    width: 500px; 
-    display: flex;
-    justify-content: center; /* Center the nav items */
-    gap: 30px; /* Space between nav items */
-}
-
-.header-list a {
-    text-decoration: none;
-    color: var(--white);
-    font-size: 18px;
-}
-
-/* "Let's Talk" container */
-.header-talk {
-    width: 200px; /* Take up 35% of the space */
-    display: flex;
-    justify-content: flex-start; /* Align "Let's Talk" to the left */
-    align-items: center;
-}
-
-.header-talk h4 a {
-    text-decoration: none;
-    color: var(--white);
-    display: flex;
-    align-items: center;
-}
-
-.header-talk img {
-    margin-right: 8px; /* Space between icon and text */
-    width: 20px; /* Icon size */
-    height: 20px; /* Icon size */
-    vertical-align: middle;
-}
-
-
-
-
 
 .main {
     text-align: center;
