@@ -112,6 +112,7 @@
 
 /* Mobile Menu Content */
 .mobile-menu-content {
+    margin-top: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -121,8 +122,23 @@
 
 /* Bottom part of the menu */
 .mobile-menu-bottom {
-    padding-bottom: 20px;
+    padding-bottom: 200px;
 }
+.mobile-menu-bottom h4 {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.mobile-menu-bottom img {
+    width: 40px;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    top: -2px; /* Adjust this value slightly */
+    right: 10px;
+}
+
 
 .mobile-menu a {
     text-decoration: none;
@@ -168,6 +184,11 @@
         display: flex;
     }
     .header-talk {
+        display: none;
+    }
+}
+@media (min-width: 821px) {
+    .mobile-menu.active{
         display: none;
     }
 }

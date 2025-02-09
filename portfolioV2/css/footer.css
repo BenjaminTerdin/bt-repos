@@ -1,0 +1,187 @@
+/* Footer Base */
+footer {
+    margin-top: 80px;
+    color: #fff;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+/* Top Content */
+.footer-content {
+    max-width: 700px;
+    margin: auto;
+}
+
+.footer-content h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #fff;
+}
+
+.subtitle {
+    font-size: 18px;
+    color: #888;
+    margin-bottom: 16px;
+}
+
+.description {
+    font-size: 16px;
+    color: #ccc;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+/* Call-to-Action Button */
+.cta-button {
+    display: inline-block;
+    background-color: #c3d400;
+    color: #000;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 12px 24px;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #a8bb00;
+}
+
+/* Bottom Footer Section */
+.footer-bottom {
+    width: 80%;  /* Set width to 80% */
+    max-width: 1200px; /* Prevent it from getting too wide on large screens */
+    margin: 40px auto 0;
+}
+
+/* Divider Line */
+.footer-bottom hr {
+    width: 100%; /* Ensure the line spans the full width of .footer-bottom */
+    border: none;
+    border-top: 1px solid #555;
+    margin-bottom: 20px;
+}
+
+.footer-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #c3d400;
+    margin-bottom: 10px;
+}
+
+.footer-rights {
+    font-size: 14px;
+    color: #bbb;
+    margin-bottom: 20px;
+}
+
+/* Social Media Icons */
+.footer-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer-icons a img {
+    width: 30px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.footer-icons a:hover img {
+    transform: scale(1.2);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Adjust footer padding and font sizes on smaller screens */
+@media (max-width: 820px) {
+    footer {
+        margin-top: 20px;
+    }
+}
+@media (max-width: 768px) {
+    footer {
+        padding: 40px 15px;
+    }
+
+    .footer-content h2 {
+        font-size: 24px;
+    }
+
+    .subtitle {
+        font-size: 16px;
+    }
+
+    .description {
+        font-size: 14px;
+    }
+
+    .cta-button {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+
+    .footer-bottom {
+        width: 90%;
+    }
+
+    .footer-title {
+        font-size: 18px;
+    }
+
+    .footer-rights {
+        font-size: 12px;
+    }
+
+    .footer-icons a img {
+        width: 25px;
+    }
+}
+
+/* Further reduce sizes for very small screens (phones) */
+@media (max-width: 480px) {
+    .footer-content h2 {
+        font-size: 20px;
+    }
+
+    .subtitle {
+        font-size: 14px;
+    }
+
+    .description {
+        font-size: 12px;
+    }
+
+    .cta-button {
+        font-size: 12px;
+        padding: 8px 16px;
+    }
+
+    .footer-bottom {
+        width: 95%;
+    }
+
+    .footer-title {
+        font-size: 16px;
+    }
+
+    .footer-icons {
+        gap: 15px;
+    }
+
+    .footer-icons a img {
+        width: 20px;
+    }
+}
