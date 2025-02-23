@@ -1,79 +1,130 @@
 <?php
-require 'vendor/autoload.php'; // Include Guzzle library
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
 
+require __DIR__ . '/vendor/autoload.php';
+
+use Dotenv\Dotenv;
+
+// Load environment variables from info.env in the project root
+$dotenv = Dotenv::createImmutable(__DIR__, 'info.env');
+$dotenv->load();
+
+use Amazon\ProductAdvertisingAPI\v1\Configuration;
+use Amazon\ProductAdvertisingAPI\v1\com\amazon\paapi5\v1\api\DefaultApi;
+use Amazon\ProductAdvertisingAPI\v1\com\amazon\paapi5\v1\SearchItemsRequest;
+use Amazon\ProductAdvertisingAPI\v1\com\amazon\paapi5\v1\ProductAdvertisingAPIClientException;
 use GuzzleHttp\Client;
 
-function fetchAmazonProducts($keyword) {
-// Access the environment variables
-$amazonAccessKey = $_ENV['AMAZON_ACCESS_KEY'];
-$amazonSecretKey = $_ENV['AMAZON_SECRET_KEY'];
-$amazonAssociateTag = $_ENV['AMAZON_ASSOCIATE_TAG'];
-
-    $endpoint = 'webservices.amazon.com';
-    $uri = '/onca/xml';
-
-    // Parameters for the API request
-    $params = [
-        'Service' => 'AWSECommerceService',
-        'Operation' => 'ItemSearch',
-        'AWSAccessKeyId' => $accessKey,
-        'AssociateTag' => $associateTag,
-        'SearchIndex' => 'All',
-        'Keywords' => $keyword,
-        'ResponseGroup' => 'Images,ItemAttributes,Offers',
-    ];
-
-    // Generate the timestamp
-    $params['Timestamp'] = gmdate('Y-m-d\TH:i:s\Z');
-
-    // Sort the parameters by key
-    ksort($params);
-
-    // Create the canonicalized query string
-    $canonicalQueryString = http_build_query($params, '', '&', PHP_QUERY_RFC3986);
-
-    // Create the string to sign
-    $stringToSign = "GET\n{$endpoint}\n{$uri}\n{$canonicalQueryString}";
-
-    // Calculate the signature
-    $signature = base64_encode(hash_hmac('sha256', $stringToSign, $secretKey, true));
-
-    // Add the signature to the request
-    $params['Signature'] = $signature;
-
-    // Build the request URL
-    $requestUrl = "https://{$endpoint}{$uri}?" . http_build_query($params);
-
-    // Make the request using Guzzle
-    $client = new Client();
-    try {
-        $response = $client->request('GET', $requestUrl);
-        $body = $response->getBody();
-        return simplexml_load_string($body);
-    } catch (Exception $e) {
-        return null; // Handle error (API call failed)
+/**
+ * Generate a cache file name based on the keyword.
+ */
+function getCacheFilename($keyword) {
+    // Ensure the cache folder exists
+    $cacheDir = __DIR__ . '/cache';
+    if (!is_dir($cacheDir)) {
+        mkdir($cacheDir, 0777, true);
     }
+    return $cacheDir . '/' . md5($keyword) . '.json';
 }
 
-// Handle the request and return results as JSON
+/**
+ * Fetch products from Amazon API with caching.
+ */
+function fetchAmazonProducts($keyword) {
+    $cacheFile = getCacheFilename($keyword);
+    $cacheTTL = 3600; // Cache time-to-live in seconds (e.g., 1 hour)
+
+    // If cache exists and is not expired, return cached data.
+    if (file_exists($cacheFile) && (time() - filemtime($cacheFile)) < $cacheTTL) {
+        error_log("Using cached data for keyword: " . $keyword);
+        $cachedData = file_get_contents($cacheFile);
+        // Here, we decode the JSON back to an object. Depending on your API, you may need to adjust.
+        return json_decode($cachedData);
+    }
+
+    // Log environment variables for debugging using $_ENV
+    error_log('AMAZON_ACCESS_KEY length: ' . strlen($_ENV['AMAZON_ACCESS_KEY'] ?? ''));
+    error_log('AMAZON_SECRET_KEY length: ' . strlen($_ENV['AMAZON_SECRET_KEY'] ?? ''));
+    error_log('AMAZON_ASSOCIATE_TAG: ' . ($_ENV['AMAZON_ASSOCIATE_TAG'] ?? ''));
+
+    // Set up configuration with your credentials using $_ENV
+    $config = new Configuration();
+    $config->setAccessKey($_ENV['AMAZON_ACCESS_KEY'] ?? '');
+    $config->setSecretKey($_ENV['AMAZON_SECRET_KEY'] ?? '');
+    $config->setHost('webservices.amazon.com');
+    $config->setRegion('us-east-1');
+
+    // Initialize the API instance.
+    $apiInstance = new DefaultApi(new Client(), $config);
+
+    // Create the search request.
+    $request = new SearchItemsRequest();
+    $request->setPartnerTag($_ENV['AMAZON_ASSOCIATE_TAG'] ?? '');
+    $request->setPartnerType("Associates");
+    $request->setKeywords($keyword);
+    $request->setSearchIndex("Electronics");
+    $request->setMarketplace("www.amazon.com");  // Marketplace is required
+    $request->setResources([
+        'Images.Primary.Medium',
+        'ItemInfo.Title',
+        'Offers.Listings.Price'
+    ]);
+
+    // Log the request parameters.
+    error_log('Request Keyword: ' . $keyword);
+    error_log('Search Index: Electronics');
+    error_log('Marketplace: www.amazon.com');
+    error_log('Resources: ' . implode(', ', ['Images.Primary.Medium', 'ItemInfo.Title', 'Offers.Listings.Price']));
+
+    // Retry logic to mitigate 429 errors
+    $maxRetries = 3;
+    $attempt = 0;
+    $retryDelay = 2; // in seconds
+
+    while ($attempt < $maxRetries) {
+        try {
+            $response = $apiInstance->searchItems($request);
+            // Cache the API response as JSON
+            file_put_contents($cacheFile, json_encode($response));
+            return $response;
+        } catch (ProductAdvertisingAPIClientException $e) {
+            $errorMessage = $e->getMessage();
+            // Check if the error indicates a 429 Too Many Requests error.
+            if (strpos($errorMessage, '429') !== false || strpos($errorMessage, 'TooManyRequests') !== false) {
+                error_log("Received 429 Too Many Requests, retrying in {$retryDelay} seconds (attempt " . ($attempt + 1) . ")...");
+                sleep($retryDelay);
+                $attempt++;
+                $retryDelay *= 2; // Exponential backoff
+            } else {
+                error_log('API request failed: ' . $errorMessage);
+                return ['error' => 'API request failed', 'message' => $errorMessage];
+            }
+        }
+    }
+    return ['error' => 'API request failed', 'message' => 'Exceeded maximum retries due to 429 errors'];
+}
+
 if (isset($_GET['keyword'])) {
     $keyword = htmlspecialchars($_GET['keyword']);
     $products = fetchAmazonProducts($keyword);
 
-    if ($products && isset($products->Items->Item)) {
+    if (isset($products['error'])) {
+        header('Content-Type: application/json');
+        echo json_encode($products);
+    } else {
         $productData = [];
-        foreach ($products->Items->Item as $item) {
+        foreach ($products->getSearchResult()->getItems() as $item) {
             $productData[] = [
-                'title' => (string) $item->ItemAttributes->Title,
-                'price' => (string) $item->OfferSummary->LowestNewPrice->FormattedPrice,
-                'image' => (string) $item->MediumImage->URL,
-                'url' => (string) $item->DetailPageURL
+                'title' => $item->getItemInfo()->getTitle()->getDisplayValue() ?? "No title",
+                'price' => $item->getOffers()->getListings()[0]->getPrice()->getDisplayAmount() ?? "Price unavailable",
+                'image' => $item->getImages()->getPrimary()->getMedium()->getURL() ?? "No image available",
+                'url'   => $item->getDetailPageURL() ?? "#"
             ];
         }
-        echo json_encode($productData); // Return data as JSON
-    } else {
-        echo json_encode([]); // No products found
+        header('Content-Type: application/json');
+        echo json_encode($productData, JSON_PRETTY_PRINT);
     }
 }
 ?>
-
