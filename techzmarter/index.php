@@ -173,104 +173,30 @@
     </div>
   </div>
   <!-- about section end -->
-  <!-- product section start -->
-      <div class="product_text">Popular <span style="color: #5ca0e9;">products</span></div>
 
-      <div class="container-list">
-        <div class="product-grid">
-          <!-- Product Card 1 -->
-          <div data-category="tech-gadgets" class="product-card">
-            <a href="product1.html" class="product-image">
-              <img src="images/OculusQuest2.png">
-            </a>
-            <div class="product-info">
-              <h2 class="product-title">Oculus Quest 2 VR Headset 128GB</h2>
-              <p class="product-description">
-                Dive into VR with the Oculus Quest 2 128GB. Wireless and powerful.
-              </p>
-            </div>
-            <div class="product-footer">
-              <div class="product-price">
-                <span class="price-label">Price:</span>
-                <span class="price-amount"><mark>$</mark>267</span>
-              </div>
-              <a href="product1.html">
-                <button class="add-to-cart">See More</button>
-              </a>
-            </div>
-          </div>
-    
-          <div data-category="audio" class="product-card">
-            <a href="product2.html" class="product-image">
-              <img src="images/jblheadphones.png">
-            </a>
-            <div class="product-info">
-              <h2 class="product-title">JBL Tune Buds</h2>
-              <p class="product-description">
-                Enjoy powerful bass and clear sound with JBL Tune Buds. Wireless, comfy, and long-lasting.
-              </p>
-            </div>
-            <div class="product-footer">
-              <div class="product-price">
-                <span class="price-label">Price:</span>
-                <span class="price-amount"><mark>$</mark>53.65</span>
-              </div>
-              <a href="product2.html">
-                <button class="add-to-cart">See More</button>
-              </a>
-            </div>
-          </div>
-    
-          <div data-category="smart-home" class="product-card">
-            <a href="product3.html" class="product-image">
-              <img src="images/tplinkcam.png">
-            </a>
-            <div class="product-info">
-              <h2 class="product-title">TP-Link Tapo C320WS</h2>
-              <p class="product-description">
-                Stay secure with the TP-Link Camera. Crisp video, easy setup, and smart monitoring anytime.
-              </p>
-            </div>
-            <div class="product-footer">
-              <div class="product-price">
-                <span class="price-label">Price:</span>
-                <span class="price-amount"><mark>$</mark>50</span>
-              </div>
-              <a href="product3.html">
-                <button class="add-to-cart">See More</button>
-              </a>
-            </div>
-          </div>
-  
-          <div data-category="power" class="product-card">
-            <a href="product4.html" class="product-image">
-              <img src="images/powerbank.png">
-            </a>
-            <div class="product-info">
-              <h2 class="product-title">Anker 737 3-Port Powerbank</h2>
-              <p class="product-description">
-                Charge multiple devices with the Anker 737 3-Port Powerbank. Fast, efficient, and portable.
-              </p>
-            </div>
-            <div class="product-footer">
-              <div class="product-price">
-                <span class="price-label">Price:</span>
-                <span class="price-amount"><mark>$</mark>144</span>
-              </div>
-              <a href="product4.html">
-                <button class="add-to-cart">See More</button>
-              </a>
-            </div>
-          </div>
-  
+  <!-- product section start -->
+
+<div class="product-section">
+    <div class="product_text">Popular <span style="color: #5ca0e9;">Products</span></div>
+
+    <div class="scroll-container">
+        <div class="product-list">
+            <?php
+            include 'fetch_products.php'; // Fetch products dynamically
+            ?>
         </div>
-      </div>
     </div>
+    
+    <div class="view-all-container">
+        <a href="product.html">
+            <button class="view-all">View All</button>
+        </a>
+    </div>
+</div>
+
 
   <!-- product section end -->
-  <!-- contact section start -->
 
-  <!-- contact section end -->
   <!-- footer section start -->
   <div class="section_footer ">
       <div class="container"> 

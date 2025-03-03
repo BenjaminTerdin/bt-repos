@@ -44,8 +44,14 @@
         "php-cs-fixer": "vendor/friendsofphp/php-cs-fixer/php-cs-fixer fix --allow-risky=yes --using-cache=no --config=.php_cs SampleGetItemsApi.php SampleSearchItemsApi.php SampleGetVariationsApi.php SampleGetBrowseNodesApi.php src/com/amazon/paapi5/v1/auth/SignHelper.php"
     },
     "autoload": {
-        "psr-4": { "Amazon\\ProductAdvertisingAPI\\v1\\" : "src/" }
+        "psr-4": {
+            "Amazon\\ProductAdvertisingAPI\\v1\\com\\amazon\\paapi5\\v1\\": "src/com/amazon/paapi5/v1/"
+        },
+        "exclude-from-classmap": [
+            "src/com/amazon/paapi5/v1/*"
+        ]
     },
+
     "autoload-dev": {
         "psr-4": { "Amazon\\ProductAdvertisingAPI\\v1\\" : "test/" }
     }

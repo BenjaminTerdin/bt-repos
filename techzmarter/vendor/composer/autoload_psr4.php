@@ -43,5 +43,6 @@ return array(
     'Composer\\XdebugHandler\\' => array($vendorDir . '/composer/xdebug-handler/src'),
     'Composer\\Semver\\' => array($vendorDir . '/composer/semver/src'),
     'Composer\\Pcre\\' => array($vendorDir . '/composer/pcre/src'),
-    'Amazon\\ProductAdvertisingAPI\\v1\\' => array($baseDir . '/src', $baseDir . '/test', $vendorDir . '/flowdee/paapi5-php-sdk/src'),
+    'Amazon\\ProductAdvertisingAPI\\v1\\com\\amazon\\paapi5\\v1\\' => array($baseDir . '/src/com/amazon/paapi5/v1'),
+    'Amazon\\ProductAdvertisingAPI\\v1\\' => array($baseDir . '/test', $vendorDir . '/flowdee/paapi5-php-sdk/src'),
 );

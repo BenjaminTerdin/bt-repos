@@ -77,6 +77,7 @@ class ComposerStaticInitbb7392af6db4b119dbdf742c54a5c95d
         ),
         'A' => 
         array (
+            'Amazon\\ProductAdvertisingAPI\\v1\\com\\amazon\\paapi5\\v1\\' => 53,
             'Amazon\\ProductAdvertisingAPI\\v1\\' => 32,
         ),
     );
@@ -230,11 +231,14 @@ class ComposerStaticInitbb7392af6db4b119dbdf742c54a5c95d
         array (
             0 => __DIR__ . '/..' . '/composer/pcre/src',
         ),
+        'Amazon\\ProductAdvertisingAPI\\v1\\com\\amazon\\paapi5\\v1\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/src/com/amazon/paapi5/v1',
+        ),
         'Amazon\\ProductAdvertisingAPI\\v1\\' => 
         array (
-            0 => __DIR__ . '/../..' . '/src',
-            1 => __DIR__ . '/../..' . '/test',
-            2 => __DIR__ . '/..' . '/flowdee/paapi5-php-sdk/src',
+            0 => __DIR__ . '/../..' . '/test',
+            1 => __DIR__ . '/..' . '/flowdee/paapi5-php-sdk/src',
         ),
     );
 
