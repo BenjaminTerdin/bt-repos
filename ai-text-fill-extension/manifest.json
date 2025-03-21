@@ -1,0 +1,31 @@
+{
+    "manifest_version": 2, 
+    "name": "AI Text Fill",
+    "version": "1.0",
+    "description": "AI-powered text auto-completion in input fields!",
+    "permissions": ["activeTab", "storage"],
+    "background": {
+      "scripts": ["background.js"],  
+      "persistent": false
+    },
+"content_scripts": [
+  {
+    "matches": ["https://docs.google.com/*"],
+    "js": ["content.js"],
+    "run_at": "document_idle"
+  }
+],
+    "browser_action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "16": "icon.png",
+        "48": "icon.png",
+        "128": "icon.png"
+      }
+    },
+    "icons": {
+      "48": "icon.png",
+      "128": "icon.png"
+    }
+  }
+  

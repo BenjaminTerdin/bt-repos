@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>AI Text Fill</title>
+  <link rel="stylesheet" href="styles.css">  <!-- Link the CSS file -->
+</head>
+<body>
+  <div class="container">
+    <h1>AI Text Fill</h1>
+    
+    <div id="apiKeySection">
+      <label for="apiKey">API Key:</label>
+      <div class="input-group">
+        <input type="password" id="apiKey" placeholder="Enter AIMLAPI Key">
+        <button id="toggleVisibility" class="icon-button">👁️</button>
+      </div>
+      <button id="saveKey" class="primary-button">Save API Key</button>
+    </div>
+
+    <div id="confirmationOverlay" class="overlay">
+      <div class="overlay-content">
+        <div class="success-icon">✓</div>
+        <p>API Key Saved Successfully!</p>
+        <p class="small">The key is now masked for security</p>
+      </div>
+    </div>
+
+    <p class="info">
+      You can get a free AIMLAPI key from <a href="https://aimlapi.com/" target="_blank">AIMLAPI</a>.
+    </p>
+  </div>
+
+  <script src="popup.js"></script>  <!-- Link to JavaScript logic for saving the key -->
+</body>
+</html>
